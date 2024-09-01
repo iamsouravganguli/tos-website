@@ -1,16 +1,15 @@
-// components/ContactForm.tsx
 import React from 'react';
 import Link from 'next/link';
 
 export function ContactForm() {
   return (
     <div className="flex flex-col justify-center bg-sky-50" id="contact-us">
-      <div className="container mx-auto flex flex-col lg:flex-row gap-12 px-12 m-24 ">
+      <div className="container mx-auto flex flex-col lg:flex-row gap-12 px-12 m-24">
         {/* Left side: Text and Links */}
         <div className="lg:w-1/2 lg:text-left">
-          <h1 className="text-gray-800 md:text-6xl text-4xl font-extrabold mb-4">Let's Talk</h1>
+          <h1 className="text-gray-800 md:text-6xl text-4xl font-extrabold mb-4">Let&apos;s Talk</h1>
           <p className="text-lg text-gray-600 mb-8">
-            Have some big idea or brand to develop and need help? Then reach out; we'd love to hear about your project and provide help.
+            Have some big idea or brand to develop and need help? Then reach out; we&apos;d love to hear about your project and provide help.
           </p>
 
           <div className="mb-8">
@@ -33,35 +32,53 @@ export function ContactForm() {
               </Link>
               <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-[#007bff] text-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="#007bff" viewBox="0 0 511 512">
-                  <path d="M111.898 160.664H15.5c-8.285 0-15 6.719-15 15V497c0 8.285 6.715 15 15 15h96.398c8.286 0 15-6.715 15-15V175.664c0-8.281-6.714-15-15-15zM96.898 482H30.5V190.664h66.398zM63.703 0C28.852 0 .5 28.352.5 63.195c0 34.852 28.352 63.2 63.203 63.2 34.848 0 63.195-28.352 63.195-63.2C126.898 28.352 98.551 0 63.703 0zm0 96.395c-18.308 0-33.203-14.891-33.203-33.2C30.5 44.891 45.395 30 63.703 30c18.305 0 33.195 14.89 33.195 33.195 0 18.309-14.89 33.2-33.195 33.2zm289.207 62.148c-22.8 0-45.273 5.496-65.398 15.777-.684-7.652-7.11-13.656-14.942-13.656h-96.406c-8.281 0-15 6.719-15 15V497c0 8.285 6.719 15 15 15h96.406c8.285 0 15-6.715 15-15V320.266c0-22.735 18.5-41.23 41.235-41.23 22.734 0 41.226 18.495 41.226 41.23V497c0 8.285 6.719 15 15 15h96.403c8.285 0 15-6.715 15-15V302.066c0-79.14-64.383-143.523-143.524-143.523zM466.434 482h-66.399V320.266c0-39.278-31.953-71.23-71.226-71.23-39.282 0-71.239 31.952-71.239 71.23V482h-66.402V190.664h66.402v11.082c0 5.77 3.309 11.027 8.512 13.524a15.01 15.01 0 0 0 15.875-1.82c14.379-14.573 34.184-22.038 55.073-22.038 43.42 0 78.933 35.54 78.933 79.488v224.6zM375.56 232.132c-29.905 0-54.421 24.09-54.421 53.858V477c0 1.765 1.358 3.171 3.209 3.171h41.445c1.851 0 3.209-1.406 3.209-3.171V286.847c0-29.77-24.514-53.715-54.361-53.715zM54.26 482H44.912c-8.26 0-14.971-6.71-14.971-14.971V102.615c0-8.26 6.711-14.971 14.971-14.971h9.348c8.26 0 14.971 6.711 14.971 14.971v364.414c0 8.261-6.711 14.971-14.971 14.971zm0 0" />
-                </svg>
-              </Link>
-              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[#007bff] text-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="#007bff" viewBox="0 0 448 512">
-                  <path d="M100.28 448H7.4V171.7h92.88V448zM53.59 121.1c-29.81 0-54.11-24.3-54.11-54.1S23.78 13 53.59 13s54.1 24.3 54.1 54.1c0 29.8-24.29 54.1-54.1 54.1zm394.72 326.9h-92.9V314.1c0-31.8-11.6-53.5-40.6-53.5-22.1 0-35.9 14.9-41.8 29.3-2.1 5-2.6 12.1-2.6 19.2v139.7h-92.9V171.7h89.7v22.3h1.3c12.5-18.9 34.6-45.9 84.2-45.9 61.4 0 107.2 40.4 107.2 127.2V448zM29.2 0C13.1 0 0 13.1 0 29.2v453.6C0 496.9 13.1 510 29.2 510H418.8c16.1 0 29.2-13.1 29.2-29.2V29.2C448 13.1 434.9 0 418.8 0H29.2z" />
+                  <path d="M111.898 160.664H15.5c-8.285 0-15 6.719-15 15V497c0 8.285 6.715 15 15 15h96.398c8.286 0 15-6.715 15-15V175.664c0-8.281-6.714-15-15-15zM96.898 482H30.5V190.664h66.398zM63.703 0C28.852 0 .5 28.352.5 63.195c0 34.852 28.352 63.2 63.203 63.2 34.848 0 63.195-28.352 63.195-63.2C126.898 28.352 98.551 0 63.703 0zm0 96.395c-18.308 0-33.203-14.891-33.203-33.2C30.5 44.891 45.395 30 63.703 30c18.305 0 33.195 14.89 33.195 33.195 0 18.309-14.89 33.2-33.195 33.2zm289.207 62.148c-22.8 0-45.273 5.496-65.398 15.777-.684-7.652-7.11-13.656-14.942-13.656h-96.406c-8.281 0-15 6.719-15 15V497c0 8.285 6.719 15 15 15h96.406c8.285 0 15-6.715 15-15V320.266c0-22.735 18.5-41.23 41.235-41.23 22.734 0 41.226 18.495 41.226 41.23V497c0 8.285 6.719 15 15 15h96.403c8.285 0 15-6.715 15-15V302.066c0-79.14-64.383-143.523-143.524-143.523zM466.434 482h-66.399V320.266c0-39.278-31.953-71.23-71.226-71.23-39.282 0-71.239 31.952-71.239 71.23V482h-66.402V190.664h66.402v11.082c0 5.77 3.309 11.027 8.512 13.524a15.01 15.01 0 0 0 15.875-1.82c14.379-14.573 34.184-22.038 55.073-22.038 43.42 0 78.933 35.54 78.933 79.488v224.6zM375.56 232.132c-29.905 0-54.421 24.09-54.421 53.858V477c0 1.765-.164 3.492-.477 5.16h-66.424c.185-1.674.286-3.404.286-5.16V320.266c0-38.282-26.84-70.33-63.407-79.312V205.66h66.406v17.406c0 1.859 1.09 3.543 2.77 4.305 1.674.758 3.645.516 5.043-.641a129.38 129.38 0 0 1 81.546-29.676c62.928 0 114.184 47.454 122.879 108.773H477V312.79c-22.933-48.347-72.739-80.658-123.536-80.658zm-101.812-52.555c8.47-2.355 17.299-.51 23.807 4.881a15.002 15.002 0 0 0 21.973-3.417l29.426-39.128a15.001 15.001 0 0 0-3.417-21.973c-20.269-15.227-45.991-19.93-70.128-12.869-24.127 7.054-44.373 24.121-56.601 47.736-2.622 4.912-1.016 10.946 3.57 14.227zm98.6-84.667c.684-7.652-4.656-14.712-12.309-15.399-25.383-2.309-51.089.168-75.482 7.383-28.07 8.194-53.144 24.763-71.465 47.797-3.191 3.992-2.538 9.828 1.52 13.003 4.081 3.206 9.787 2.573 13.003-1.52 16.48-20.647 38.748-35.287 63.134-42.411 20.864-6.097 42.952-8.418 64.73-6.675 7.671.696 14.711-4.647 15.399-12.31zm-102.547 17.114c3.535-6.626 11.74-9.095 18.358-5.553 6.631 3.552 9.09 11.738 5.552 18.359-3.536 6.626-11.743 9.093-18.359 5.551-6.626-3.552-9.09-11.739-5.551-18.357zm7.482 19.005c6.53 3.506 9.035 11.545 5.529 18.068-3.506 6.53-11.538 9.032-18.068 5.529-6.53-3.507-9.033-11.538-5.529-18.068 3.506-6.53 11.537-9.034 18.068-5.529zm7.481 19.004c6.53 3.507 9.034 11.538 5.529 18.068-3.506 6.53-11.537 9.033-18.068 5.529-6.53-3.506-9.033-11.537-5.529-18.068 3.506-6.53 11.537-9.034 18.068-5.529zm7.482 19.004c6.53 3.507 9.034 11.537 5.529 18.068-3.506 6.53-11.537 9.033-18.068 5.529-6.53-3.506-9.033-11.537-5.529-18.068 3.506-6.53 11.537-9.034 18.068-5.529zm-81.213-74.736c6.53 3.507 9.034 11.537 5.529 18.068-3.506 6.53-11.537 9.033-18.068 5.529-6.53-3.506-9.033-11.537-5.529-18.068 3.506-6.53 11.537-9.034 18.068-5.529zm60.747 8.057c3.536 6.629 1.075 14.807-5.551 18.359-6.63 3.543-14.823 1.074-18.359-5.553-3.536-6.628-1.075-14.807 5.551-18.359 6.63-3.544 14.823-1.073 18.359 5.553zm0 0zm-30.374 16.92c6.531 3.506 9.034 11.537 5.529 18.068-3.506 6.53-11.537 9.034-18.068 5.529-6.53-3.506-9.033-11.537-5.529-18.068 3.506-6.53 11.537-9.034 18.068-5.529z" />
                 </svg>
               </Link>
             </div>
           </div>
         </div>
-
-        {/* Right side: Contact Form */}
-        <div className="lg:w-1/2 border-2 border-gray-300 p-6 rounded-lg shadow-lg bg-white">
-          <form action="#" method="POST" className="space-y-4">
-            <div className="space-y-2">
-              <label htmlFor="name" className="text-gray-800 text-xl font-semibold">Name</label>
-              <input type="text" id="name" name="name" required className="border-2 border-gray-200 rounded-md p-3 w-full text-lg" />
+        
+        {/* Right side: Form */}
+        <div className="lg:w-1/2">
+          <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div className="mb-4">
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+                Name
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="name"
+                type="text"
+                placeholder="Your name"
+              />
             </div>
-            <div className="space-y-2">
-              <label htmlFor="email" className="text-gray-800 text-xl font-semibold">Email</label>
-              <input type="email" id="email" name="email" required className="border-2 border-gray-200 rounded-md p-3 w-full text-lg" />
+            <div className="mb-4">
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+                Email
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                placeholder="Your email"
+              />
             </div>
-            <div className="space-y-2">
-              <label htmlFor="message" className="text-gray-800 text-xl font-semibold">Message</label>
-              <textarea id="message" name="message" rows={6} required className="border-2 border-gray-200 rounded-md p-3 w-full text-lg" />
+            <div className="mb-4">
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+                Message
+              </label>
+              <textarea
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="message"
+                placeholder="Your message"
+              />
             </div>
-            <div>
-              <button type="submit" className="bg-[#007bff] text-white px-6 py-3 rounded-md text-lg font-semibold">
+            <div className="flex items-center justify-between">
+              <button
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+              >
                 Send
               </button>
             </div>
@@ -71,5 +88,3 @@ export function ContactForm() {
     </div>
   );
 }
-
-export default ContactForm;
