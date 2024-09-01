@@ -5,7 +5,7 @@ import { FAQSection } from "@/components/main/faq/faq";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Navbar/>
       
         <Hero/>

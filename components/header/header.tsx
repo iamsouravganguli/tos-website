@@ -9,7 +9,7 @@ export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white fixed w-full z-20 top-0 border-b border-gray-200">
+    <nav className="bg-white fixed w-full z-20 top-0 border-b border-gray-200 overflow-x-hidden">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
         {/* Logo Section */}
         <div className="flex-shrink-0">
@@ -67,13 +67,14 @@ export const Navbar: React.FC = () => {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="block py-2 px-3 text-black rounded hover:bg-gray-100 transition-all duration-500 ease-in-out"
+                className="block py-2 px-3 text-black rounded hover:bg-gray-200 transition-all duration-500 ease-in-out"
               >
                 {item.label}
               </Link>
             </li>
           ))}
-          <li>
+         <div className='flex flex-row gap-1 mx-2'>
+         <li>
             <Link href="/careers">
               <span className="block text-md m-1 px-4 py-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-100 hover:font-semibold w-fit transition-all duration-500 ease-in-out">
                 Careers
@@ -87,6 +88,7 @@ export const Navbar: React.FC = () => {
               </span>
             </Link>
           </li>
+         </div>
         </ul>
       </div>
     </nav>

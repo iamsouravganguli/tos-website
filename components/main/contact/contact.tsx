@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export function ContactForm() {
   return (
-    <div className="flex flex-col justify-center bg-sky-50" id="contact-us">
+    <div className="flex flex-col justify-center bg-sky-50 w-full" id="contact-us">
       <div className="container mx-auto flex flex-col lg:flex-row gap-12 px-12 m-24">
         {/* Left side: Text and Links */}
         <div className="lg:w-1/2 lg:text-left">
