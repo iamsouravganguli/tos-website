@@ -1,10 +1,16 @@
+export interface NavItem {
+  href: string;
+  label: string;
+}
+
+
 
 export interface Service {
-    title: string;
-    description: string;
-    link: string;
-    image: string;
-  }
+  title: string;
+  description: string;
+  image: string;
+}
+
   
   
 export type HeroData = {
@@ -18,17 +24,18 @@ export type HeroData = {
   };
   
   
-import { IconType } from 'react-icons';
+  import { IconType } from 'react-icons';
 
-export interface FooterLink {
-  name: string;
-  href: string;
-  icon?: IconType; 
-}
-
-export interface FooterSection {
-  title: string;
-  links: FooterLink[];
-}
+  export interface FooterLink {
+    name: string;
+    href: string;
+    icon?: IconType; 
+  }
+  
+  export interface FooterSection {
+    title: string;
+    links: FooterLink[];
+  }
+  
 
 

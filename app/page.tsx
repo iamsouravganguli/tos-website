@@ -1,5 +1,6 @@
-import { Hero, Navbar, Services } from "@/components";
-import { Footer } from "@/components/footer";
+import { AboutUs, Hero, Navbar, Services, Footer, ContactForm } from "@/components";
+
+import { FAQSection } from "@/components/main/faq/faq";
 
 
 export default function Home() {
@@ -9,6 +10,9 @@ export default function Home() {
       
         <Hero/>
         <Services/>
+        <AboutUs/>
+        <FAQSection/>
+        <ContactForm/>
         <Footer/>
       
     </div>    

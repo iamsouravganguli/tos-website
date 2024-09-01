@@ -1,39 +1,33 @@
-'use client';
-
 import React from 'react';
-import Link from 'next/link';
-import { services } from '@/data/index'
+import { ServiceCard } from './serviceCard';
+import { servicesData } from '@/data';
+import { ClientDomains } from './clientDomain'; 
 
-export function Services() {
+export const Services: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-12 px-6 md:px-12">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">
-          Our Services
-        </h2>
-        <p className="text-lg text-gray-700 mb-12">
-          We offer a comprehensive range of IT services tailored to meet your business needs. Discover how we can help you achieve your goals with our expert solutions.
-        </p>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white p-8 rounded-lg shadow-sm transition-transform transform hover:scale-105 hover:shadow-md"
-            >
-              <img 
-                src={service.image} 
-                alt={service.title} 
-                className="w-full h-40 object-cover rounded-t-lg mb-6"
-              />
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">{service.title}</h3>
-              <p className="text-gray-600 mb-6">{service.description}</p>
-              <Link href={service.link} className="text-blue-600 hover:text-blue-800 font-medium transition-colors">
-                Learn More
-              </Link>
+    <>
+      <section id="services">
+      <div className='pt-16'>
+      <section className="py-24 bg-white " >
+        <div className="container mx-auto px-4">
+          <h2 className="text-6xl font-bold text-center mb-12">Services we can help you with</h2>
+          <div className="flex overflow-x-auto no-scrollbar">
+            <div className="flex flex-nowrap space-x-6">
+              {servicesData.map((service, index) => (
+                <ServiceCard
+                  key={index}
+                  title={service.title}
+                  description={service.description}
+                  image={service.image}
+                />
+              ))}
             </div>
-          ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <ClientDomains />
+        </div> 
+      </section>
+    </>
   );
-}
+};
