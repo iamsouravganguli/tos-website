@@ -13,7 +13,7 @@ export const FAQSection: React.FC = () => {
     <section className="flex flex-col py-12 px-4 md:px-8 min-h-screen" id="faq">
       <div className="container mx-auto py-32">
         <h1 className="text-5xl md:text-6xl font-bold mb-8 text-left md:ml-20 text-black">
-          FAQ's
+          FAQ&apos;s
         </h1>
         <div id="accordion-flush" className="accordion mx-auto w-full max-w-7xl">
           {faqData.map((item: FAQItem) => (
