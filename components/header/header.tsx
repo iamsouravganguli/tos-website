@@ -17,7 +17,7 @@ export const Navbar: React.FC = () => {
             <img
               src="/assets/LogoNav.png"
               alt="YourLogo"
-              className="h-8 md:h-14 w-auto cursor-pointer"
+              className="h-8 md:h-14 w-auto cursor-pointer ml-1"
             />
           </Link>
         </div>
