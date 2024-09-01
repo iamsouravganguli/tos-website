@@ -7,7 +7,7 @@ import { TechnologiesSection } from './technology';
 
 export function AboutUs() {
   return (
-    <section className="bg-white text-black w-full" id="about-us">
+    <section className="bg-white text-black w-full p-2" id="about-us">
       <AboutSection />
       <DiscoverSection />
       <TechnologiesSection />

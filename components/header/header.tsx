@@ -1,15 +1,44 @@
-// components/Navbar.tsx
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { navbarData } from '@/data';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      setIsOpen(false);
+    }
+  };
+
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 0);
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="bg-white fixed w-full z-20 top-0 border-b border-gray-200 overflow-x-hidden">
+    <nav className={`bg-white fixed w-full z-20 top-0 border-b border-gray-200 overflow-x-hidden ${isScrolled ? 'shadow-lg' : ''}`}>
       <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
         {/* Logo Section */}
         <div className="flex-shrink-0">
@@ -61,7 +90,7 @@ export const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden fixed top-16 left-0 w-full bg-white shadow-md ${isOpen ? 'block' : 'hidden'}`}>
+      <div ref={menuRef} className={`md:hidden fixed top-16 left-0 w-full bg-white shadow-md ${isOpen ? 'block' : 'hidden'}`}>
         <ul className="flex flex-col p-4 font-medium border border-gray-100 rounded-lg bg-gray-50">
           {navbarData.map((item) => (
             <li key={item.href}>
@@ -73,22 +102,22 @@ export const Navbar: React.FC = () => {
               </Link>
             </li>
           ))}
-         <div className='flex flex-row gap-1 mx-2'>
-         <li>
-            <Link href="/careers">
-              <span className="block text-md m-1 px-4 py-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-100 hover:font-semibold w-fit transition-all duration-500 ease-in-out">
-                Careers
-              </span>
-            </Link>
-          </li>
-          <li>
-            <Link href="#contact-us">
-              <span className="block text-md m-1 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 hover:font-semibold w-fit transition-all duration-500 ease-in-out">
-                Contact Us
-              </span>
-            </Link>
-          </li>
-         </div>
+          <div className='flex flex-row gap-1 mx-2'>
+            <li>
+              <Link href="/careers">
+                <span className="block text-md m-1 px-4 py-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-100 hover:font-semibold w-fit transition-all duration-500 ease-in-out">
+                  Careers
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link href="#contact-us">
+                <span className="block text-md m-1 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 hover:font-semibold w-fit transition-all duration-500 ease-in-out">
+                  Contact Us
+                </span>
+              </Link>
+            </li>
+          </div>
         </ul>
       </div>
     </nav>
