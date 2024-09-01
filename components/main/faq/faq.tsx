@@ -10,9 +10,9 @@ export const FAQSection: React.FC = () => {
   };
 
   return (
-    <section className="flex flex-col py-12 px-4 md:px-8 min-h-screen w-full " id="faq">
+    <section className="flex flex-col  py-12 px-4 md:px-8 min-h-screen w-full bg-slate-50 " id="faq">
       <div className="container mx-auto md:py-32 pt-6 m-4">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl md:ml-20 lg:ml-16 font-bold mb-8 text-left text-black">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl md:pl-5 lg:ml-16 font-bold mb-8 text-left text-black">
           FAQ&apos;s
         </h1>
         <div id="accordion-flush" className="accordion mx-auto w-full max-w-7xl">

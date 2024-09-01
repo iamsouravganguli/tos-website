@@ -4,9 +4,9 @@ import Link from 'next/link';
 export function ContactForm() {
   return (
     <div className="flex flex-col justify-center bg-sky-50 w-full" id="contact-us">
-      <div className="container mx-auto flex flex-col lg:flex-row gap-12 px-12 m-24">
+      <div className="container mx-auto flex flex-col lg:flex-row gap-12 px-6 m-24 md:ml-24">
         {/* Left side: Text and Links */}
-        <div className="lg:w-1/2 lg:text-left">
+        <div className="lg:w-1/2 lg:text-left ">
           <h1 className="text-gray-800 md:text-6xl text-4xl font-extrabold mb-4">Let&apos;s Talk</h1>
           <p className="text-lg text-gray-600 mb-8">
             Have some big idea or brand to develop and need help? Then reach out; we&apos;d love to hear about your project and provide help.
@@ -40,8 +40,8 @@ export function ContactForm() {
         </div>
         
         {/* Right side: Form */}
-        <div className="lg:w-1/2">
-          <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div className="lg:w-1/3 ">
+          <form className="bg-white shadow-md rounded px-6 pt-6 pb-8 mb-4">
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
                 Name

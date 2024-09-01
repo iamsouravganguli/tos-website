@@ -8,10 +8,10 @@ export function Hero() {
   const { title, description, buttonText1, buttonLink1, buttonText2, buttonLink2, image } = heroData;
 
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between h-screen bg-sky-50 text-black px-6 md:px-12 pt-16 w-full">
-      <div className="flex flex-col justify-center max-w-xl space-y-4 md:space-y-6  md:mx-20 mt-6 mb-6 md:mt-0 md:mb-0">
+    <section className="flex flex-col md:flex-row items-center justify-between md:h-screen max-h-screen bg-sky-50 text-black px-6 md:px-12 pt-16 w-full">
+      <div className="flex flex-col justify-center max-w-xl space-y-4 md:space-y-6 md:mx-20 mt-6 mb-6 md:mt-0 md:mb-0">
         <h1 className="text-3xl md:text-6xl font-bold leading-tight">{title}</h1>
-        <p className="text-sm md:text-base lg:text-lg">{description}</p>
+        <p className="text-md md:text-base lg:text-lg">{description}</p>
         <div className="flex flex-col md:flex-row gap-2 md:gap-6">
           <Link
             href={buttonLink1} 
@@ -27,7 +27,7 @@ export function Hero() {
           </Link>
         </div>
       </div>
-      <div className="flex items-center justify-center flex-1 px-6 md:px-0">
+      <div className="flex items-center justify-center ">
         <img 
           src={image} 
           alt="Totally Optimized Solutions" 
