@@ -46,7 +46,7 @@ export function DiscoverSection() {
         <div className="relative flex md:flex-col flex-row items-center gap-4 p-2 z-10">
           <div className="rounded-full bg-gray-200 p-2 md:p-4 md:mr-4">
             <img 
-              src="/assets/icon3.svg" 
+              src="/public/assets/icon3.svg" 
               alt="Implementing" 
               className="w-12 h-12 md:w-16 md:h-16"
             />
