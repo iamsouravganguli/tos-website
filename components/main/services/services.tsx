@@ -1,16 +1,16 @@
-'use client'
+"use client";
 
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react'; // Import Swiper components
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'; // Import Swiper modules
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react"; // Import Swiper components
+import { Autoplay, Navigation, Pagination } from "swiper/modules"; // Import Swiper modules
 
-import 'swiper/css'; // Import Swiper styles
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import "swiper/css"; // Import Swiper styles
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-import { ServiceCard } from './serviceCard';
-import { servicesData } from '@/data';
-import { ClientDomains } from './clientDomain';
+import { ServiceCard } from "./serviceCard";
+import { servicesData } from "@/data";
+import { ClientDomains } from "./clientDomain";
 
 export const Services: React.FC = () => {
   return (
@@ -26,7 +26,6 @@ export const Services: React.FC = () => {
                 modules={[Autoplay, Navigation, Pagination]}
                 spaceBetween={-20}
                 slidesPerView={1}
-               
                 autoplay={{ delay: 2000 }}
                 breakpoints={{
                   640: {
@@ -38,8 +37,13 @@ export const Services: React.FC = () => {
                     spaceBetween: 30,
                   },
                   1024: {
-                    slidesPerView:4,
+                    slidesPerView: 3,
                     spaceBetween: 20,
+                  },
+
+                  1300: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
                   },
                 }}
                 className="mySwiper ml-5"
