@@ -3,7 +3,7 @@ import { Service } from '@/types';
 
 export const ServiceCard: React.FC<Service> = ({ title, description, image }) => {
   return (
-    <div className="w-72 sm:w-80 h-auto p-4 sm:p-6 bg-gray-100 border border-gray-100 rounded-lg shadow-sm flex flex-col ">
+    <div className="w-72 sm:w-80 h-auto min-h-[225px] md:min-h-[270px] p-4 sm:p-6 bg-gray-100 border border-gray-100 rounded-lg shadow-sm flex flex-col ">
       <div className="flex justify-center items-center mb-4 h-14 sm:h-16">
         <svg className="w-6 h-6 sm:w-8 sm:h-8 text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
           <path d={image} />
