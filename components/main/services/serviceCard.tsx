@@ -12,7 +12,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ title,description,imag
 
   return (
     <div className="flex flex-col sm:flex-row xl:flex-col 2xl:flex-row bg-gray-100 bg-opacity-85 py-4
-    px-4 sm:py-5 sm:px-6 rounded-xl sm:h-44 xl:h-60 2xl:h-44">
+    px-4 sm:py-5 sm:px-6 rounded-xl sm:h-44 xl:h-60 2xl:h-44 max-w-[416px]">
     <div className="justify-start items-start flex mr-4 sm:mr-6 mb-0 xl:mb-3 2xl:mb-0">
   
     <div className="p-4 bg-white rounded-full">
