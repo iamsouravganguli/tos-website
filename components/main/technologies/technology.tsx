@@ -1,29 +1,32 @@
 // components/TechnologiesSection.tsx
 
-import React from 'react';
+import React from "react";
 
 export function TechnologiesSection() {
   return (
-    <section className="md:grid bg-white text-black md:px-12 max-h-screen py-16 " id="technologies">
-      
-      <div className='flex flex-col md:flex-row items-center justify-center gap-24 md:py-24 pt-16 md:px-20'>
-        {/* Text Content */}
-      <div className="flex-1 max-w-2xl space-y-2 md:space-y-6 mx-4 md:mx-auto md:mb-0">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 md:mb-6">Technologies we use</h2>
-        <p className="text-base md:text-xl">
-          Totally Optimized Solutions Ltd. works with a variety of web and mobile technologies every day 
-          for different projects & clients. Here’s some of the tech you’ll find us using.
-        </p>
-      </div>
-
-      {/* Image Content */}
-      <div className="flex items-center justify-center md:w-1/2 mx-4">
-        <img 
-          src='https://e7.pngegg.com/pngimages/901/967/png-clipart-front-end-web-development-responsive-web-design-front-and-back-ends-web-design-web-design-user-interface-design.png' 
-          alt="Technologies" 
-          className="w-full h-auto object-cover" 
-        />
-      </div>
+    <section className="text-gray-900 pb-12 px-4">
+      <div
+        className="max-w-screen-xl flex flex-col items-center mx-auto lg:flex-row pt-20 sm:pt-16 md:pt-16 lg:pt-28 xl:pt-36 lg:pb-28 xl:pb-36 px-4 sm:px-8 md:px-4 lg:px-4 xl:px-0 lg:mr-4 xl:mr-auto overflow-y-hidden overflow-x-hidden"
+        id="technologies"
+      >
+        <div className="flex flex-col w-full lg:w-3/5 xl:w-1/2 items-start text-left">
+          <div className="font-extrabold text-left leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
+            Technologies we use
+          </div>
+          <div
+            className="mb-8 mt-8 leading-relaxed text-gray-700 text-lg sm:text-pera"
+            style={{lineHeight: "2.5rem"}}
+          >
+            Double slash Internet Pvt. Ltd. works with a variety of web and
+            mobile technologies every day for different projects &amp; clients.
+            Here’s some of the tech you’ll find us using.
+          </div>
+        </div>
+        <div className="w-9/12 md:w-9/12 lg:w-2/5 xl:w-1/2 flex justify-center sm:justify-end">
+          <div className="lg:flex hidden w-full justify-center md:justify-end sm:-mr-37"></div>
+          <img src="/assets/technologies.svg" alt="" />
+     
+        </div>
       </div>
     </section>
   );

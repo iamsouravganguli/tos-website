@@ -27,4 +27,30 @@ html {
   }
 }
 
+@layer utilities {
+  .bg-light{
+    background-color: #e6e7ff;
+  }
+  .bg-dark{
+    background-color: #01044b;
+  }
+  .text-light{
+    color: #b4b7fe;
+  }
+  .text-dark{
+    color: #01044b;
+  }
+  .bg-medium-light{
+    background-color: #5056fc;
+  }
+  .bg-medium,.border-medium{
+    background-color: #1e26fb;
+  }
+}
+
+
+
+
+
+
   

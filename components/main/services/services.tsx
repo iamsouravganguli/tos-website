@@ -34,16 +34,16 @@ export const Services: React.FC = () => {
                
                 breakpoints={{
                   640: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
+                    slidesPerView: 2,
+                    spaceBetween: 300,
                   },
                   768: {
                     slidesPerView: 2,
-                    spaceBetween: 30,
+                    spaceBetween: 200,
                   },
                   1024: {
                     slidesPerView: 3,
-                    spaceBetween: 20,
+                    spaceBetween: 300,
                   },
 
                   1300: {

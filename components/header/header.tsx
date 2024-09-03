@@ -38,7 +38,7 @@ export const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`bg-white fixed w-full z-20 top-0 border-b border-gray-200 overflow-x-hidden ${isScrolled ? 'shadow-lg' : ''}`}>
+    <nav className={`bg-[#fff] fixed w-full z-20 top-0 border-b border-gray-200 overflow-x-hidden ${isScrolled ? 'shadow-lg' : ''}`}>
       <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
         {/* Logo Section */}
         <div className="flex-shrink-0">
@@ -89,9 +89,19 @@ export const Navbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      <div ref={menuRef} className={`md:hidden fixed top-16 left-0 w-full bg-white shadow-md ${isOpen ? 'block' : 'hidden'}`}>
-        <ul className="flex flex-col p-4 font-medium border border-gray-100 rounded-lg bg-gray-50">
+      {/* Mobile Drawer Menu from Top */}
+      <div
+        ref={menuRef}
+        className={`fixed top-0 left-0 w-full bg-[#fff] shadow-md transition-transform transform ${
+          isOpen ? 'translate-y-[4.55rem]' : '-translate-y-full '
+        } ease-in-out duration-300 `}
+      >
+
+
+
+
+
+        <ul className="flex flex-col p-4 font-medium border-b border-gray-100 bg-white">
           {navbarData.map((item) => (
             <li key={item.href}>
               <Link
@@ -102,7 +112,7 @@ export const Navbar: React.FC = () => {
               </Link>
             </li>
           ))}
-          <div className='flex flex-row gap-1 mx-2'>
+          <div className="flex flex-row gap-1 mx-2 mt-4">
             <li>
               <Link href="/careers">
                 <span className="block text-md m-1 px-4 py-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-100 hover:font-semibold w-fit transition-all duration-500 ease-in-out">
