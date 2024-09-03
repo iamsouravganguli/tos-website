@@ -48,7 +48,7 @@ export const Services: React.FC = () => {
 
                   1300: {
                     slidesPerView: 4,
-                    spaceBetween: 50,
+                    spaceBetween: 300,
                   },
                 }}
                 className="mySwiper "
