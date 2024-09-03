@@ -17,7 +17,7 @@ export function Footer() {
           {/* Links on the right */}
           <div className="flex flex-row md:gap-4  gap-3 text-md text-white mb-4 md:mb-0">
             {navbarData.map((item) => (
-            <Link href={item.href} className="hover:underline mb-2 md:mb-0">{item.label}</Link>))}
+            <Link key={item.href} href={item.href} className="hover:underline mb-2 md:mb-0">{item.label}</Link>))}
           </div>
         </div>
 
