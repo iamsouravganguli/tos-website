@@ -24,7 +24,7 @@ export const Services: React.FC = () => {
               </h2>
               <Swiper
                 modules={[Autoplay, Navigation, Pagination]}
-                spaceBetween={-50}
+                spaceBetween={20}
                 slidesPerView={1}
                 loop={true} // Enables infinite looping
                 autoplay={{
@@ -47,7 +47,7 @@ export const Services: React.FC = () => {
                   },
 
                   1300: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
                     spaceBetween: 10,
                   },
                 }}

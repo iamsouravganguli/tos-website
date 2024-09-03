@@ -1,52 +1,58 @@
-import React from 'react';
-import Link from 'next/link'; 
-import { aboutUsData } from '@/data/index';
+import React from "react";
+import Link from "next/link";
+import { aboutUsData } from "@/data/index";
 
 export function AboutSection() {
   const { title, description } = aboutUsData;
 
   return (
-   <section className='md:grid bg-white text-black  max-h-screen py-16 px-6 md:px-12' id='about-us'>
-     <div >
-      <div className='flex flex-col md:flex-row items-center justify-center gap-12 xl:gap-40 ' >
-      {/* Image Content */}
-      <div className="flex-1 max-w-lg mx-auto md:mx-0 order-2 md:order-1 flex justify-center">
-        <img 
-          src='/assets/about_us.jpg' 
-          alt="About Us" 
-          className="w-full max-w-lg h-auto object-cover rounded-lg shadow-lg" 
-        />
-      </div>
-
-      {/* Text Content */}
-      <div className="flex-1 max-w-lg mx-auto md:mx-12 order-1 md:order-2 text-left">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">{title}</h2> 
-        <p className="text-base md:text-lg lg:text-xl mb-6"> 
-          {description}
-        </p>
-        <Link 
-          href="#contact" 
-          className="text-blue-600 hover:underline flex items-center gap-2 text-base md:text-lg"
-        >
-          Get in Touch
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            className="w-4 h-4 md:w-5 md:h-5 text-blue-600"  
-            fill="none" 
-            viewBox="0 0 24 24" 
-            stroke="currentColor"
+    <section className="text-gray-900 body-font">
+      <div
+        className="max-w-screen-xl mx-auto flex pt-20 items-center pb-20 sm:pb-28 md:pb-36 flex-col-reverse px-4 sm:px-8 md:px-4 lg:px-4 xl:px-5 lg:flex-row"
+        id="about_us"
+      >
+        <div className="w-full sm:w-full md:w-3/5 lg:w-1/2 mb-0 items-center flex justify-center md:justify-end mt-10 sm:mt-14 md:mt-10 lg:mt-0 mr-0 lg:mr-24 xl:mr-44 rounded-md">
+          <img
+            className="rounded-xl"
+            loading="lazy"
+            alt="About Us"
+            src="/assets/about_us.jpg"
+          />
+        </div>
+        <div className="flex flex-col w-full sm:w-full md:w-full lg:w-2/5 items-start text-left">
+          <div className="font-extrabold leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
+            About Us
+          </div>
+          <div
+            className="mb-8 mt-8 leading-relaxed text-gray-700 text-lg sm:text-pera md:text-pera"
+            style={{lineHeight: "2.5rem"}}
           >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth="2" 
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </Link>
+            We at Double slash Internet Pvt. Ltd. always provide highly
+            customized solutions to our clients to meet their unique needs. We
+            strive to create successful results and long-term benefits for our
+            customers and we would absolutely love to do it for you.
+          </div>
+          <div className="flex justify-center">
+            <a
+              className="inline-flex items-center font-semibold ml-0 sm:ml-2 md:mb-2 lg:mb-0 text-xl sm:text-2xl text-double-blue"
+              href="#contact_us"
+            >
+              Get started
+              <svg
+                className="w-6 h-6 ml-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="currentColor"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
-   </section>
+    </section>
   );
 }
