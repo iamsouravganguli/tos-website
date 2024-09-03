@@ -14,7 +14,7 @@ export const FAQSection: React.FC = () => {
     <section className="text-gray-900 px-4">
       <div className="max-w-screen-xl mx-auto" id="faq">
         <div className="flex flex-col justify-start px-4 sm:px-8 md:px-4 xl:px-0 pt-16 sm:pt-20 lg:pt-28 xl:pt-36 items-start">
-          <div className="font-extrabold leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
+          <div className="text-[#02077d] font-extrabold leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
             FAQ’s
           </div>
           <div className="mt-2 sm:mt-10">
@@ -25,10 +25,10 @@ export const FAQSection: React.FC = () => {
                     className={`flex justify-between items-center py-7 cursor-pointer transition duration-300 ease-in-out`}
                     onClick={() => handleToggle(item.id)}
                   >
-                    <div className="text-gray-700 font-medium w-full md:text-2xl text-pera">
+                    <div className="text-light font-medium w-full md:text-2xl text-pera">
                       {item.question}
                     </div>
-                    <span className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-300 rounded-lg">
+                    <span className="text-light text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-300 rounded-lg">
                       {activeId === item.id ? '-' : '+'}
                     </span>
                   </div>

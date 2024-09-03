@@ -7,7 +7,7 @@ import { FAQSection } from "@/components/main/faq/faq";
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
-      <Navbar/>
+     
         <Hero/>
         <Services/>
         <ClientDomains/>
@@ -17,7 +17,7 @@ export default function Home() {
         <EmiCalculator/>
         <FAQSection/>
         <ContactForm/>
-        <Footer/>
+       
       
     </div>    
   );

@@ -28,13 +28,13 @@ const clientDomains = [
 
 
   return (
-    <section className="text-gray-900 body-font bg-[url('/assets/bg-pattern.svg')] bg-center bg-repeat-x">
+    <section className="text-light body-font bg-[url('/assets/bg-pattern.svg')] bg-center bg-repeat-x">
       <div className="max-w-screen-lg mx-auto">
         <div className="flex flex-col justify-center px-4 sm:px-8 md:px-4 xl:px-0 pb-10 sm:pb-20 md:pb-20 lg:pb-52 pt-10 sm:pt-24 md:pt-28 lg:pt-32 items-start md:items-center">
-          <div className="font-extrabold leading-none text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] text-start md:text-center">
+          <div className="text-dark font-extrabold leading-none text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] text-start md:text-center">
             Serving the clients
           </div>
-          <div className="font-extrabold leading-none text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] text-start md:text-center">
+          <div className="text-dark font-extrabold leading-none text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] text-start md:text-center">
             across multiple domain
           </div>
           <div className="grid gap-10 pt-20 w-full sm:w-4/5 md:w-3/4 lg:w-full grid-cols-1 lg:grid-cols-2">

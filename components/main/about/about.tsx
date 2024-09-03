@@ -20,7 +20,7 @@ export function AboutSection() {
           />
         </div>
         <div className="flex flex-col w-full sm:w-full md:w-full lg:w-2/5 items-start text-left">
-          <div className="font-extrabold leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
+          <div className="text-dark font-extrabold leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
             About Us
           </div>
           <div
@@ -34,7 +34,7 @@ export function AboutSection() {
           </div>
           <div className="flex justify-center">
             <a
-              className="inline-flex items-center font-semibold ml-0 sm:ml-2 md:mb-2 lg:mb-0 text-xl sm:text-2xl text-double-blue"
+              className="inline-flex items-center font-semibold ml-0 sm:ml-2 md:mb-2 lg:mb-0 text-xl sm:text-2xl text-light"
               href="#contact_us"
             >
               Get started

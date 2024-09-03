@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { navbarData } from '@/data';
 
 export function Footer() {
   return (
@@ -15,10 +16,8 @@ export function Footer() {
 
           {/* Links on the right */}
           <div className="flex flex-row md:gap-4  gap-3 text-md text-white mb-4 md:mb-0">
-            <Link href="#services" className="hover:underline mb-2 md:mb-0">Services</Link>
-            <Link href="#about-us" className="hover:underline mb-2 md:mb-0">About Us</Link>
-            <Link href="#technologies" className="hover:underline mb-2 md:mb-0">Technologies</Link>
-            <Link href="#faq" className="hover:underline">FAQ&apos;s</Link>
+            {navbarData.map((item) => (
+            <Link href={item.href} className="hover:underline mb-2 md:mb-0">{item.label}</Link>))}
           </div>
         </div>
 

@@ -20,7 +20,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ title,description,imag
     </div>
     </div>
     <div className="flex flex-col text-left select-none">
-    <div className="font-extrabold text-xl sm:text-2xl">UI/UX</div>
+    <div className="font-extrabold text-xl sm:text-2xl text-light">UI/UX</div>
     <div className="mt-2 text-gray-500 font-medium text-base sm:text-lg">Combining the best user experience with the best visual interface.</div>
     </div>
     </div>

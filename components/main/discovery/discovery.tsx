@@ -4,12 +4,12 @@ import React from "react";
 
 export function DiscoverSection() {
   return (
-    <section className="text-gray-900 body-font bg-sky-50">
+    <section className="text-gray-900 body-font bg-light">
       <div className="flex flex-col justify-center px-4 sm:px-8 md:px-4 lg:px-0 pt-16 sm:pt-24 md:pt-28 lg:pt-32 items-center">
-        <div className="font-extrabold text-center leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
+        <div className="text-dark font-extrabold text-center leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
           Discover how we work
         </div>
-        <div className="font-extrabold mt-2 text-center leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
+        <div className="text-dark font-extrabold mt-2 text-center leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
           to deliver outstanding results
         </div>
       </div>
@@ -32,7 +32,7 @@ export function DiscoverSection() {
               </svg>
             </div>
             <div className="flex ml-5 md:ml-4 flex-col lg:items-center">
-              <div className="font-extrabold text-left text-xl sm:text-2xl">
+              <div className=" text-light font-extrabold text-left text-xl sm:text-2xl">
                 Ideate
               </div>
               <div className="mt-2 text-gray-500 font-medium text-base sm:text-lg w-full lg:w-4/5">
@@ -56,7 +56,7 @@ export function DiscoverSection() {
               </svg>
             </div>
             <div className="flex ml-5 md:ml-4 flex-col lg:items-center">
-              <div className="font-extrabold text-left text-xl sm:text-2xl">
+              <div className=" text-light font-extrabold text-left text-xl sm:text-2xl">
                 Design
               </div>
               <div className="mt-2 text-gray-500 font-medium text-base sm:text-lg w-full lg:w-4/5">
@@ -80,7 +80,7 @@ export function DiscoverSection() {
               </svg>
             </div>
             <div className="flex ml-5 md:ml-4 flex-col lg:items-center">
-              <div className="font-extrabold text-left text-xl sm:text-2xl">
+              <div className=" text-light font-extrabold text-left text-xl sm:text-2xl">
                 Develop
               </div>
               <div className="mt-2 text-gray-500 font-medium text-base sm:text-lg w-full lg:w-4/5">
@@ -104,7 +104,7 @@ export function DiscoverSection() {
               </svg>
             </div>
             <div className="flex ml-5 md:ml-4 flex-col lg:items-center">
-              <div className="font-extrabold text-left text-xl sm:text-2xl">
+              <div className=" text-light font-extrabold text-left text-xl sm:text-2xl">
                 Deploy
               </div>
               <div className="mt-2 text-gray-500 font-medium text-base sm:text-lg w-full lg:w-4/5">

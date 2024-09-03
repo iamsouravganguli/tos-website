@@ -10,7 +10,7 @@ export function TechnologiesSection() {
         id="technologies"
       >
         <div className="flex flex-col w-full lg:w-3/5 xl:w-1/2 items-start text-left">
-          <div className="font-extrabold text-left leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
+          <div className="text-dark font-extrabold text-left leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
             Technologies we use
           </div>
           <div
