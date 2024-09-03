@@ -7,7 +7,7 @@ export function ContactForm() {
       <div className="container mx-auto flex flex-col lg:flex-row gap-12 px-6 m-24 md:ml-24">
         {/* Left side: Text and Links */}
         <div className="lg:w-1/2 lg:text-left ">
-          <h1 className="text-gray-800 md:text-6xl text-4xl font-extrabold mb-4">Let&apos;s Talk</h1>
+          <h1 className="text-gray-800 text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">Let&apos;s Talk</h1>
           <p className="text-lg text-gray-600 mb-8">
             Have some big idea or brand to develop and need help? Then reach out; we&apos;d love to hear about your project and provide help.
           </p>

@@ -15,11 +15,11 @@ import { ClientDomains } from "./clientDomain";
 export const Services: React.FC = () => {
   return (
     <>
-      <section className="md:grid bg-white text-black max-h-screen " >
+      <section className="md:grid bg-white text-black max-h-screen " id="services">
         <div className="w-full">
           <section className="py-24 bg-white m-4">
             <div className="container mx-auto px-4">
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold md:text-center text-start mb-12">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold md:text-center text-start mb-12">
                 Services we can help you with
               </h2>
               <Swiper

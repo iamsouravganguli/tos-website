@@ -13,7 +13,7 @@ export const FAQSection: React.FC = () => {
     <section className='md:grid bg-slate-50 text-black  max-h-screen px-6 md:px-12' id="faq">
       <div className="flex flex-col  py-12 px-4 md:px-8 w-ful " >
       <div className="container mx-auto md:py-32 pt-6 m-4">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl md:pl-5 lg:ml-16 font-bold mb-8 text-left text-black">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl md:pl-5 lg:ml-16 font-bold mb-8 text-left text-black">
           FAQ&apos;s
         </h1>
         <div id="accordion-flush" className="accordion mx-auto w-full max-w-7xl">

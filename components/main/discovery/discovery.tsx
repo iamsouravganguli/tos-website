@@ -6,7 +6,7 @@ export function DiscoverSection() {
   return (
     <section className='md:grid bg-sky-50 text-black md:px-12 max-h-screen py-16 '>
       <div className='flex flex-col justify-center items-center py-24 px-6 relative'>
-      <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6 md:text-center text-start">Discover how we work</h2>
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 md:text-center text-start">Discover how we work</h2>
       <p className="text-base md:text-lg lg:text-xl mb-6 md:text-center text-start">
         Learn about our processes and strategies to deliver outstanding results.
       </p>

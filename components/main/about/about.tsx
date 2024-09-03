@@ -6,8 +6,8 @@ export function AboutSection() {
   const { title, description } = aboutUsData;
 
   return (
-   <section className='md:grid bg-white text-black md:px-12 max-h-screen py-16' id='about-us'>
-     <div className=' flex flex-col md:flex-row items-center justify-between w-full space-y-16 md:space-y-0' >
+   <section className='md:grid bg-white text-black  max-h-screen py-16 px-6 md:px-12' id='about-us'>
+     <div >
       <div className='flex flex-col md:flex-row items-center justify-center gap-12 ' >
       {/* Image Content */}
       <div className="flex-1 max-w-lg mx-auto md:mx-0 order-2 md:order-1 flex justify-center">
@@ -20,7 +20,7 @@ export function AboutSection() {
 
       {/* Text Content */}
       <div className="flex-1 max-w-lg mx-auto md:mx-12 order-1 md:order-2 text-left">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 md:mb-6">{title}</h2> 
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">{title}</h2> 
         <p className="text-base md:text-lg lg:text-xl mb-6"> 
           {description}
         </p>

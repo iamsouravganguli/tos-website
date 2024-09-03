@@ -9,18 +9,18 @@ const domains = [
 
 export const ClientDomains: React.FC = () => {
   return (
-    <section className="md:grid bg-sky-50 text-black max-h-screen py-16">
-      <div className="container mx-auto px-4 py-24">
+    <section className="bg-sky-50 text-black py-16 overflow-hidden">
+      <div className="container mx-auto px-4 py-12">
         <div className='mb-12'>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-semibold md:text-center text-start">Serving the clients</h2>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-semibold md:text-center text-start">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center">Serving the clients</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center">
             across multiple domains
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {domains.map((domain, index) => (
-            <div key={index} className="p-6 bg-white border border-gray-200 rounded-lg shadow-md flex flex-col items-center text-center">
+            <div key={index} className="p-4 sm:p-6 bg-white border border-gray-200 rounded-lg shadow-md flex flex-col items-center text-center">
               <div className="flex items-center justify-center mb-4">
                 <svg className="w-12 h-12 sm:w-16 sm:h-16 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path d={domain.icon} />
