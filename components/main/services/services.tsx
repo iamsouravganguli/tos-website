@@ -18,7 +18,7 @@ export const Services: React.FC = () => {
       <section className="md:grid bg-white text-black max-h-screen " id="services">
         <div className="w-full">
           <section className="py-24 bg-white m-4 md:mx-0">
-            <div className="container mx-auto ">
+            <div className="w-[100vw]">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold md:text-center text-start mb-12">
                 Services we can help you with
               </h2>
@@ -39,16 +39,16 @@ export const Services: React.FC = () => {
                   },
                   768: {
                     slidesPerView: 2,
-                    spaceBetween: 200,
+                    spaceBetween: 100,
                   },
                   1024: {
                     slidesPerView: 3,
-                    spaceBetween: 300,
+                    spaceBetween: 400,
                   },
 
                   1300: {
                     slidesPerView: 4,
-                    spaceBetween: 300,
+                    spaceBetween: 400,
                   },
                 }}
                 className="mySwiper "

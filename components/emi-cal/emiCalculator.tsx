@@ -160,7 +160,7 @@ const EmiCalculator: React.FC = () => {
             className="mb-8 mt-8 leading-relaxed text-gray-700 text-lg sm:text-pera"
             style={{lineHeight: "2.5rem"}}
           >
-            Explore our loan calculator to understand your repayment options. Adjust the loan amount, tenure, and interest rate to find a plan that fits your needs.
+            Explore our EMI calculator to understand your repayment options. Adjust the loan amount, tenure, and interest rate to find a plan that fits your needs.
           </div>
         </div>
 
