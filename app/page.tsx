@@ -1,4 +1,4 @@
-import { AboutUs, Hero, Navbar, Services, Footer, ContactForm } from "@/components";
+import { AboutSection, Hero, Navbar, Footer, ContactForm, TechnologiesSection, DiscoverSection, Services, ClientDomains } from "@/components";
 
 import { FAQSection } from "@/components/main/faq/faq";
 
@@ -10,7 +10,10 @@ export default function Home() {
       
         <Hero/>
         <Services/>
-        <AboutUs/>
+        <ClientDomains/>
+        <AboutSection/>
+        <DiscoverSection/>
+        <TechnologiesSection/>
         <FAQSection/>
         <ContactForm/>
         <Footer/>

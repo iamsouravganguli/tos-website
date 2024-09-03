@@ -9,8 +9,8 @@ const domains = [
 
 export const ClientDomains: React.FC = () => {
   return (
-    <section className="py-24 bg-sky-50 min-h-screen">
-      <div className="container mx-auto px-4">
+    <section className="md:grid bg-sky-50 text-black max-h-screen py-16">
+      <div className="container mx-auto px-4 py-24">
         <div className='mb-12'>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-semibold md:text-center text-start">Serving the clients</h2>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-semibold md:text-center text-start">

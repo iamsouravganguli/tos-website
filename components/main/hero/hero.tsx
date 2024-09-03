@@ -8,8 +8,9 @@ export function Hero() {
   const { title, description, buttonText1, buttonLink1, buttonText2, buttonLink2, image } = heroData;
 
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between md:h-screen max-h-screen bg-sky-50 text-black px-6 md:px-12 pt-16 w-full">
-      <div className="flex flex-col justify-center max-w-xl space-y-4 md:space-y-6 md:mx-20 mt-6 mb-6 md:mt-0 md:mb-0">
+    <section className='md:grid bg-sky-50 text-black  max-h-screen py-16 px-6 md:px-12'>
+      <div className="flex flex-col md:flex-row items-center justify-center gap-24 md:py-24 pt-16 md:px-20">
+      <div className="flex flex-col justify-center max-w-xl space-y-4 md:space-y-6 ">
         <h1 className="text-3xl md:text-6xl font-bold leading-tight">{title}</h1>
         <p className="text-md md:text-base lg:text-lg">{description}</p>
         <div className="flex flex-col md:flex-row gap-2 md:gap-6">
@@ -34,6 +35,7 @@ export function Hero() {
           className="w-full h-auto object-cover" 
         />
       </div>
+    </div>
     </section>
   );
 }

@@ -15,8 +15,8 @@ import { ClientDomains } from "./clientDomain";
 export const Services: React.FC = () => {
   return (
     <>
-      <section id="services">
-        <div className="pt-16 w-full">
+      <section className="md:grid bg-white text-black max-h-screen " >
+        <div className="w-full">
           <section className="py-24 bg-white m-4">
             <div className="container mx-auto px-4">
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold md:text-center text-start mb-12">
@@ -60,7 +60,7 @@ export const Services: React.FC = () => {
               </Swiper>
             </div>
           </section>
-          <ClientDomains />
+          
         </div>
       </section>
     </>

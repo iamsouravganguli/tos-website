@@ -1,5 +1,3 @@
-// components/AboutSection.tsx
-
 import React from 'react';
 import Link from 'next/link'; 
 import { aboutUsData } from '@/data/index';
@@ -8,7 +6,9 @@ export function AboutSection() {
   const { title, description } = aboutUsData;
 
   return (
-    <div className='flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24 min-h-screen bg-white pt-24 m-4' >
+   <section className='md:grid bg-white text-black md:px-12 max-h-screen py-16' id='about-us'>
+     <div className=' flex flex-col md:flex-row items-center justify-between w-full space-y-16 md:space-y-0' >
+      <div className='flex flex-col md:flex-row items-center justify-center gap-12 ' >
       {/* Image Content */}
       <div className="flex-1 max-w-lg mx-auto md:mx-0 order-2 md:order-1 flex justify-center">
         <img 
@@ -46,5 +46,7 @@ export function AboutSection() {
         </Link>
       </div>
     </div>
+    </div>
+   </section>
   );
 }
