@@ -20,4 +20,11 @@ html {
   scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 540px) {
+  
+  .swiper-wrapper{
+    margin-left: 9%;
+  }
+}
+
   

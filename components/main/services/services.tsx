@@ -18,15 +18,20 @@ export const Services: React.FC = () => {
       <section className="md:grid bg-white text-black max-h-screen " id="services">
         <div className="w-full">
           <section className="py-24 bg-white m-4">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-2">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold md:text-center text-start mb-12">
                 Services we can help you with
               </h2>
               <Swiper
                 modules={[Autoplay, Navigation, Pagination]}
-                spaceBetween={-20}
+                spaceBetween={-50}
                 slidesPerView={1}
-                autoplay={{ delay: 2000 }}
+                loop={true} // Enables infinite looping
+                autoplay={{
+                  delay: 2000, // Set the delay for autoplay in milliseconds
+                  disableOnInteraction: false, // Continue autoplay after user interaction
+                }}
+               
                 breakpoints={{
                   640: {
                     slidesPerView: 1,
@@ -46,10 +51,11 @@ export const Services: React.FC = () => {
                     spaceBetween: 10,
                   },
                 }}
-                className="mySwiper ml-5"
+                className="mySwiper "
+    
               >
                 {servicesData.map((service, index) => (
-                  <SwiperSlide key={index}>
+                  <SwiperSlide key={index} style={{paddingLeft: "0px"}}>
                     <ServiceCard
                       title={service.title}
                       description={service.description}

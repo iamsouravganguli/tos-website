@@ -12,7 +12,7 @@ export const ClientDomains: React.FC = () => {
     <section className="bg-sky-50 text-black py-16 overflow-hidden">
       <div className="container mx-auto px-4 py-12">
         <div className='mb-12'>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center">Serving the clients</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-start md:text-center">Serving the clients</h2>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center">
             across multiple domains
           </h2>

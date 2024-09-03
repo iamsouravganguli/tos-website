@@ -8,7 +8,7 @@ export function AboutSection() {
   return (
    <section className='md:grid bg-white text-black  max-h-screen py-16 px-6 md:px-12' id='about-us'>
      <div >
-      <div className='flex flex-col md:flex-row items-center justify-center gap-12 ' >
+      <div className='flex flex-col md:flex-row items-center justify-center gap-12 xl:gap-40 ' >
       {/* Image Content */}
       <div className="flex-1 max-w-lg mx-auto md:mx-0 order-2 md:order-1 flex justify-center">
         <img 
