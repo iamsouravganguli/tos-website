@@ -27,7 +27,7 @@ export function AboutSection() {
             className="mb-8 mt-8 leading-relaxed text-gray-700 text-lg sm:text-pera md:text-pera"
             style={{lineHeight: "2.5rem"}}
           >
-            We at Double slash Internet Pvt. Ltd. always provide highly
+            We at The Optimized Solutions always provide highly
             customized solutions to our clients to meet their unique needs. We
             strive to create successful results and long-term benefits for our
             customers and we would absolutely love to do it for you.
