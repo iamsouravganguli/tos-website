@@ -13,7 +13,7 @@ const handleInterestClick = (value:string) => {
 
 
   return (
-    <section className='w-full bg-sky-50 py-20 ' id='contact-us'>
+    <section className='w-full bg-sky-50 pt-20 ' id='contact-us'>
     <div className="mt-6 max-w-6xl max-lg:max-w-3xl mx-auto my-20 bg-white shadow-lg rounded-lg">
     <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-[sans-serif]">
         <div>
