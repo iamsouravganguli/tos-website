@@ -51,7 +51,7 @@ export const Services: React.FC = () => {
                     spaceBetween: 100,
                   },
                   1400:{
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                     spaceBetween: 400,
                   }
                 }}
