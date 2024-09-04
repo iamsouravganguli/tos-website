@@ -2,16 +2,55 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { useForm, Controller } from 'react-hook-form';
+import * as yup from 'yup';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { useMutation } from '@tanstack/react-query';
+import axios from 'axios';
+
+// Validation schema
+const schema = yup.object().shape({
+  name: yup.string().required('Name is required'),
+  email: yup.string().email('Invalid email format').required('Email is required'),
+  subject: yup.string().required('Subject is required'),
+  message: yup.string().required('Message is required'),
+  interest: yup.string().required('Interest is required')
+});
+
+// API function to send data
+const sendContactForm = async (data:any) => {
+  return await axios.post('/api/contact', data); // replace with your actual API endpoint
+};
 
 export function ContactForm() {
-const [activeButton, setActiveButton] = React.useState("Web Design");
+  const [activeButton, setActiveButton] = React.useState("Web Design");
 
-const handleInterestClick = (value:string) => {
-  console.log(value);
-    setActiveButton(value);
+  // useForm with yupResolver
+  const { control, handleSubmit, formState: { errors } } = useForm({
+    resolver: yupResolver(schema)
+  });
+
+  // Mutation using TanStack Query
+  const mutation = useMutation({
+    mutationKey: ['contactForm' ],
+    mutationFn: sendContactForm,
+    onSuccess: () => {
+      alert('Message sent successfully');
+    },
+    onError: () => {
+      alert('An error occurred. Please try again later');
+  }
 }
+  );
 
+  // Handle form submission
+  const onSubmit = (data:any) => {
+    mutation.mutate(data);
+  };
 
+  const handleInterestClick = (value:string) => {
+    setActiveButton(value);
+  }
   return (
     <section className='w-full bg-sky-50 pt-20 ' id='contact-us'>
     <div className="mt-6 max-w-6xl max-lg:max-w-3xl mx-auto my-20 bg-white shadow-lg rounded-lg">
@@ -87,22 +126,81 @@ const handleInterestClick = (value:string) => {
 
         <div className="bg-slate-100 p-6 rounded-lg">
             <p className="text-sm font-semibold text-gray-800">I&apos;m interested in...</p>
-
+              <form className="mt-8 space-y-4">
             <div className="space-y-4 max-lg:mt-4">
-                <button type="button" className={`px-4 py-2 rounded-lg   ${activeButton === "Web Design" ? "text-white bg-medium-light " : "text-gray-600 bg-transparent border-gray-300"} text-sm tracking-wider font-medium outline-none border-2  mr-4`} onClick={() => {handleInterestClick("Web Design")}}>Web design</button>
-                <button type="button" className={`px-4 py-2 rounded-lg  ${activeButton === "Graphic Design" ? "text-white bg-medium-light" : "text-gray-600 bg-transparent border-gray-300"}  text-sm tracking-wider font-medium outline-none border-2  mr-4`}  onClick={() => {handleInterestClick("Graphic Design")}}>Graphic design</button>
-                <button type="button" className={`px-4 py-2 rounded-lg ${activeButton === "AI Bots" ? "text-white bg-medium-light" : "text-gray-600 bg-transparent border-gray-300"} text-sm tracking-wider font-medium outline-none border-2 `}  onClick={() => {handleInterestClick("AI Bots")}}>AI Bots</button>
+              {['Web Design', 'Graphic Design', 'AI Bots'].map((interest, index) => (
+                <Controller
+                  key={index}
+                  name="interest"
+                  control={control}
+                  render={({ field }) => (
+                    <button
+                      {...field}
+                      type="button"
+                      className={`px-4 py-2 rounded-lg ${activeButton === interest ? "text-white bg-medium-light" : "text-gray-600 bg-transparent border-gray-300"} text-sm tracking-wider font-medium outline-none border-2 mr-4`}
+                      onClick={() => handleInterestClick(interest)}
+                    >
+                      {interest}
+                    </button>
+                  )}
+                />
+              ))}
+            {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
             </div>
 
-            <form className="mt-8 space-y-4">
-                <input type='text' placeholder='Name'
-                    className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#1e26fb]" />
-                <input type='email' placeholder='Email'
-                    className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#1e26fb]" />
-                <input type='text' placeholder='Subject'
-                    className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#1e26fb]" />
-                <textarea placeholder='Message' rows={6}
-                    className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-[#1e26fb]"></textarea>
+            <Controller
+                name="name"
+                control={control}
+                render={({ field }) => (
+                  <input
+                    {...field}
+                    type='text'
+                    placeholder='Name'
+                    className={`w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#1e26fb] ${errors.name ? 'border-red-500' : ''}`}
+                  />
+                )}
+              />
+              {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
+      <Controller
+                name="email"
+                control={control}
+                render={({ field }) => (
+                  <input
+                    {...field}
+                    type='email'
+                    placeholder='Email'
+                    className={`w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#1e26fb] ${errors.email ? 'border-red-500' : ''}`}
+                  />
+                )}
+              />
+              {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
+  <Controller
+                name="subject"
+                control={control}
+                render={({ field }) => (
+                  <input
+                    {...field}
+                    type='text'
+                    placeholder='Subject'
+                    className={`w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#1e26fb] ${errors.subject ? 'border-red-500' : ''}`}
+                  />
+                )}
+              />
+              {errors.subject && <p className="text-red-500 text-xs mt-1">{errors.subject.message}</p>}
+<Controller
+                name="message"
+                control={control}
+                render={({ field }) => (
+                  <textarea
+                    {...field}
+                    placeholder='Message'
+                    rows={6}
+                    className={`w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-[#1e26fb] ${errors.message ? 'border-red-500' : ''}`}
+                  />
+                )}
+              />
+              {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message.message}</p>}
+
                 <button type='button'
                     className="text-white bg-medium-light hover:bg-medium tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' className="mr-2" viewBox="0 0 548.244 548.244">
