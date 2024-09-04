@@ -8,7 +8,7 @@ export const servicesData: Service[] = [
     image: "/assets/services/web.png",
   },
   {
-    title: "Mobile App Development",
+    title: "App Development",
     description: "Creating user-friendly mobile applications for iOS and Android.",
     image: "/assets/services/mobile-app.png",
   },
