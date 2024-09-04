@@ -58,8 +58,11 @@ html {
   .bg-medium-light{
     background-color: #5056fc;
   }
-  .bg-medium,.border-medium{
+  .bg-medium{
     background-color: #1e26fb;
+  }
+  .border-medium{
+    border-color: #1e26fb;
   }
 }
 

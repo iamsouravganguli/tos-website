@@ -115,14 +115,14 @@ export const Navbar: React.FC = () => {
           <div className="flex flex-row gap-1 mx-2 mt-4">
             <li>
               <Link href="/careers">
-                <span className="block text-md m-1 px-4 py-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-100 hover:font-semibold w-fit transition-all duration-500 ease-in-out">
+                <span className="block text-md m-1 px-4 py-2 border border-medium text-light rounded hover:bg-blue-100 hover:font-semibold w-fit transition-all duration-500 ease-in-out">
                   Careers
                 </span>
               </Link>
             </li>
             <li>
               <Link href="#contact-us">
-                <span className="block text-md m-1 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 hover:font-semibold w-fit transition-all duration-500 ease-in-out">
+                <span className="block text-md m-1 px-4 py-2 bg-medium-light text-white rounded hover:bg-medium hover:font-semibold w-fit transition-all duration-500 ease-in-out">
                   Contact Us
                 </span>
               </Link>

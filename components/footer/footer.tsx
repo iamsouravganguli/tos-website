@@ -6,18 +6,18 @@ import { navbarData } from '@/data';
 
 export function Footer() {
   return (
-    <footer className="bg-zinc-950 overflow-x-hidden">
+    <footer className=" bg-gradient-to-b from-[#5056fc] to-[#1e26fb] flow-x-hidden">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="flex flex-col md:flex-row items-start md:items-center px-10 md:px-0 justify-between">
           {/* Logo on the left */}
-          <Link href="/" className="flex items-center mb-4 md:mb-0">
+          <Link href="/" className="flex items-center mb-4 md:mb-0 ml-[-10px]">
             <Image src="/assets/LogoFoot.png" width={100} height={100} alt="TOS Logo" />
           </Link>
 
           {/* Links on the right */}
-          <div className="flex flex-row md:gap-4  gap-3 text-md text-white mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row  md:gap-4  gap-3 text-md text-white mb-4 md:mb-0">
             {navbarData.map((item) => (
-            <Link key={item.href} href={item.href} className="hover:underline mb-2 md:mb-0">{item.label}</Link>))}
+            <Link key={item.href} href={item.href} className="hover:underline mb-2 md:mb-0 text-white font-semibold ">{item.label}</Link>))}
           </div>
         </div>
 

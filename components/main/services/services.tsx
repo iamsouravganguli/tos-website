@@ -17,7 +17,7 @@ export const Services: React.FC = () => {
     <>
       <section className="md:grid bg-white text-dark max-h-screen " id="services">
         <div className="w-full">
-          <section className="py-24 bg-white m-4 md:mx-0">
+          <section className="pt-16 pb-4 bg-white m-4 md:mx-0">
             <div className="w-[100vw]">
               <h2 className=" text-dark text-3xl sm:text-4xl md:text-5xl font-bold md:text-center text-start mb-12">
                 Services we can help you with
