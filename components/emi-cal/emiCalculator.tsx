@@ -36,8 +36,8 @@ const EmiCalculator: React.FC = () => {
     datasets: [
       {
         data: [loanAmount, totalInterest],
-        backgroundColor: ['#4A90E2', '#FF6F61'], // Blue for principal, pink for interest
-        hoverBackgroundColor: ['#4A90E2', '#FF6F61'],
+        backgroundColor: ['#5056fc', '#FF6F61'], // Blue for principal, pink for interest
+        hoverBackgroundColor: ['#1e26fb', '#FF6F61'],
         borderWidth: 2,
       },
     ],
@@ -87,11 +87,8 @@ const EmiCalculator: React.FC = () => {
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto p-6">
-          <h1 className="hidden md:block text-3xl font-semibold text-center mb-6 text-purple-700">
-            Loan Calculator
-          </h1>
-
+        <div className="max-w-4xl mx-auto py-6 md:px-6">
+      
           {/* Container for responsiveness */}
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             {/* Left side: Sliders and EMI details */}
@@ -113,7 +110,7 @@ const EmiCalculator: React.FC = () => {
                   value={loanAmount}
                   onChange={(e) => setLoanAmount(Number(e.target.value))}
                   className="w-full appearance-none rounded-lg h-2 cursor-pointer"
-                  style={getRangeStyle(loanAmount, 1000, 200000, '#4A90E2')}
+                  style={getRangeStyle(loanAmount, 1000, 200000, '#8286fd')}
                 />
               </div>
 
@@ -134,7 +131,7 @@ const EmiCalculator: React.FC = () => {
                   value={months}
                   onChange={(e) => setMonths(Number(e.target.value))}
                   className="w-full appearance-none rounded-lg h-2 cursor-pointer"
-                  style={getRangeStyle(months, 1, 12, '#4A90E2')
+                  style={getRangeStyle(months, 1, 12, '#8286fd')
                 
                   }
                 />
@@ -155,12 +152,12 @@ const EmiCalculator: React.FC = () => {
                   value={interestRate}
                   onChange={(e) => setInterestRate(Number(e.target.value))}
                   className="w-full appearance-none rounded-lg h-2 cursor-pointer"
-                  style={getRangeStyle(interestRate, 0.5, 15, '#4A90E2')}
+                  style={getRangeStyle(interestRate, 0.5, 15, '#8286fd')}
                 />
               </div>
 
               {/* EMI Result Display */}
-              <div className="mt-4 p-4 bg-[#8286fd] rounded-lg">
+              <div className="mt-4 p-4 bg-[#8286fd] rounded-lg min-w-[340px]">
                 <p className="text-lg font-medium text-white">
                   Monthly Payable: ₹{emi.toFixed(2)}/mo
                 </p>
@@ -177,7 +174,7 @@ const EmiCalculator: React.FC = () => {
           </div>
 
           {/* Bottom row for Principal, Interest, and Total Payable amounts */}
-          <div className="flex flex-row lg:flex-row justify-between items-center mt-6 p-4 py-2 bg-white rounded-lg order-first lg:order-none gap-4">
+          <div className="flex flex-row lg:flex-row justify-between items-center mt-6 md:mt-6 p-4 py-2 bg-white rounded-lg order-first lg:order-none gap-4 min-w-[340px]">
             <div className="text-center lg:text-left mb-2 lg:mb-0">
               <p className="text-gray-700 font-medium">Principal</p>
               <p className="text-purple-700">₹{loanAmount}</p>
