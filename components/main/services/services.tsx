@@ -37,7 +37,7 @@ export const Services: React.FC = () => {
                     slidesPerView: 2,
                     spaceBetween: 300,
                   },
-                  768: {
+                  840: {
                     slidesPerView: 2,
                     spaceBetween: 100,
                   },
@@ -47,9 +47,13 @@ export const Services: React.FC = () => {
                   },
 
                   1300: {
-                    slidesPerView: 4,
-                    spaceBetween: 400,
+                    slidesPerView: 3,
+                    spaceBetween: 100,
                   },
+                  1400:{
+                    slidesPerView: 3,
+                    spaceBetween: 400,
+                  }
                 }}
                 className="mySwiper "
     
