@@ -54,7 +54,7 @@ export function ContactForm() {
   return (
     <section className='w-full bg-sky-50 pt-20 ' id='contact-us'>
     <div className="mt-6 max-w-6xl max-lg:max-w-3xl mx-auto my-20 bg-white shadow-lg rounded-lg">
-    <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-[sans-serif]">
+    <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 pb-8 font-[sans-serif]">
         <div>
             <h1 className="text-4xl font-bold text-dark">Get in Touch</h1>
             <p className="text-sm  mt-4 leading-relaxed text-gray-600">Have some big idea or brand to develop and need help? Then reach out we&apos;d love to hear about your project  and provide help.</p>
@@ -124,7 +124,7 @@ export function ContactForm() {
             </ul>
         </div>
 
-        <div className="bg-slate-100 p-6 rounded-lg">
+        <div className="bg-slate-100 p-6 pb-8  rounded-lg">
             <p className="text-sm font-semibold text-gray-800">I&apos;m interested in...</p>
               <form className="mt-8 space-y-4">
             <div className="space-y-4 max-lg:mt-4">

@@ -87,7 +87,7 @@ const EmiCalculator: React.FC = () => {
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto py-6 md:px-6">
+      <div className="max-w-4xl sm:mx-auto py-6 sm:px-6 px-2">
       
           {/* Container for responsiveness */}
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
