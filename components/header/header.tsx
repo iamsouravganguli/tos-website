@@ -66,7 +66,7 @@ export const Navbar: React.FC = () => {
 
         {/* Right Section: Buttons */}
         <div className="hidden md:flex items-center space-x-3">
-          <Link href="/careers">
+          <Link href="/career">
             <span className="text-md px-4 py-2 border-2 border-blue-700 text-blue-700 rounded-md hover:bg-blue-700 hover:text-white hover:font-semibold transition-all duration-500 ease-in-out">
               Careers
             </span>
