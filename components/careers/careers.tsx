@@ -151,7 +151,7 @@ export const Career: React.FC = () => {
         <span className="border border-blue-600 text-blue-600 px-3 py-1 rounded-md my-2">
             We are hiring
           </span>
-          <div className="text-black font-extrabold leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
+          <div className="text-black font-extrabold leading-none text-4xl md:text-5xl lg:text-6xl">
             Discover your new career
           </div>
           
