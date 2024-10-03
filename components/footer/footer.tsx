@@ -15,7 +15,7 @@ export function Footer() {
           </Link>
 
           {/* Links on the right */}
-          <div className="flex flex-col md:flex-row  md:gap-4  gap-3 text-md text-white mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row  md:gap-4  gap-3 md:text-md text-sm text-white mb-4 md:mb-0">
             {navbarData.map((item) => (
             <Link key={item.href} href={item.href} className="hover:underline mb-2 md:mb-0 text-white font-semibold ">{item.label}</Link>))}
           </div>
@@ -24,10 +24,19 @@ export function Footer() {
         <hr className="my-6 border-gray-200" />
 
         {/* Copyright at the bottom */}
-        <div className="text-center  md:text-lg text-xs text-white">
+        <div className='flex md:flex-row flex-col gap-2 md:gap-0 justify-between'>
+
+        <div className=" text-xs text-white">
+        <span>GST NO :- 05DDGPK8229B1ZR</span>
+        </div>
+        
+        <div className=" text-sm text-white">
           <span>
             © {new Date().getFullYear()} <Link href="/" className="hover:underline">Totally Optimized Solutions</Link>. All Rights Reserved.
           </span>
+        </div>
+
+        
         </div>
       </div>
     </footer>

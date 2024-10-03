@@ -71,7 +71,7 @@ export const Navbar: React.FC = () => {
               Careers
             </span>
           </Link>
-          <Link href="#contact-us">
+          <Link href="/#contact-us">
             <span className="text-md px-4 py-2 border-2 border-blue-700 bg-blue-700 text-white rounded-md hover:bg-blue-800 hover:font-semibold transition-all duration-500 ease-in-out">
               Contact Us
             </span>
@@ -98,9 +98,6 @@ export const Navbar: React.FC = () => {
       >
 
 
-
-
-
         <ul className="flex flex-col p-4 font-medium border-b border-gray-100 bg-white">
           {navbarData.map((item) => (
             <li key={item.href}>
@@ -121,7 +118,7 @@ export const Navbar: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="#contact-us">
+              <Link href="/#contact-us">
                 <span className="block text-md m-1 px-4 py-2 bg-medium-light text-white rounded hover:bg-medium hover:font-semibold w-fit transition-all duration-500 ease-in-out">
                   Contact Us
                 </span>
