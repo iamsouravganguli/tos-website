@@ -10,7 +10,7 @@ export function HireSection() {
         How we Hire?
         </div>
         <div className="text-black text-balance text-center text-xl sm:text-base mt-6">
-        Join the Tos team and help shape the future with your unique perspectives and experiences. A place where curiosity, passion and continuous learning are celebrated, and where you'll work with innovative minds to tackle exciting new challenges.
+        Join the Tos team and help shape the future with your unique perspectives and experiences. A place where curiosity, passion and continuous learning are celebrated, and where you&apos;ll work with innovative minds to tackle exciting new challenges.
         </div>
 
         
@@ -62,7 +62,7 @@ export function HireSection() {
               Written/Technical
               </div>
               <div className="mt-2 text-gray-500 font-medium text-base  sm:text-base w-full lg:w-4/5">
-              If we like what we see in your profile, we'll reach out for a written/technical interview as a precursor to the next big thing.
+              If we like what we see in your profile, we&apos;ll reach out for a written/technical interview as a precursor to the next big thing.
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@ export function HireSection() {
               Personal Interview
               </div>
               <div className="mt-2 text-gray-500 font-medium text-base  sm:text-base w-full lg:w-4/5">
-              Here's where we meet you and find out if you have what it takes to become part of our thriving team.
+              Here&apos;s where we meet you and find out if you have what it takes to become part of our thriving team.
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@ export function HireSection() {
               Final Review
               </div>
               <div className="mt-2 text-gray-500 font-medium text-base  sm:text-base w-full lg:w-4/5">
-              We'll be right back with you after a short discussion internally. Hold tight until then!
+              We&apos;ll be right back with you after a short discussion internally. Hold tight until then!
               </div>
             </div>
           </div>
