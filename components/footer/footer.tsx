@@ -27,7 +27,7 @@ export function Footer() {
         <div className='flex md:flex-row flex-col gap-2 md:gap-0 justify-between'>
 
         <div className=" text-xs text-white">
-        <span>GST NO :- 05DDGPK8229B1ZR</span>
+        <span>GST No :- 05DDGPK8229B1ZR</span>
         </div>
         
         <div className=" text-sm text-white">

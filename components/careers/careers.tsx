@@ -33,7 +33,8 @@ const careerData: JobItem[] = [
     experience: "2+ years of experience",
     salary: "$70,000 - $90,000/year",
     location: "Remote",
-    insights: "We're looking for team players who love coding in a fast-paced environment.",
+    insights:
+      "We're looking for team players who love coding in a fast-paced environment.",
   },
   {
     id: 2,
@@ -148,26 +149,29 @@ export const Career: React.FC = () => {
     <section className="text-gray-900 w-full px-4">
       <div className="w-full mt-6 mx-auto " id="careers">
         <div className="flex flex-col justify-start items-start w-4/5 mx-auto pt-16 sm:pt-20 lg:pt-28 xl:pt-36">
-        <span className="border border-blue-600 text-blue-600 px-3 py-1 rounded-md my-2">
+          <span className="border border-blue-600 text-blue-600 px-3 py-1 rounded-md my-2">
             We are hiring
           </span>
           <div className="text-black font-extrabold leading-none text-4xl md:text-5xl lg:text-6xl">
             Discover your new career
           </div>
-          
+
           <div className="w-full my-4">
             <ul className="list-none w-full">
               {careerData.map((job) => (
-                <li key={job.id} className="w-full border-b-2 last:border-none border-gray-300">
-                  <div className="flex justify-between items-center py-7">
+                <li
+                  key={job.id}
+                  className="w-full border-b-2 last:border-none border-gray-300"
+                >
+                  <div
+                    className="flex justify-between items-center py-7 cursor-pointer"
+                    onClick={() => handleToggle(job.id)}
+                  >
                     <div className="text-black font-medium w-full md:text-2xl text-pera">
                       {job.title}
                     </div>
-                    <span 
-                      className=" text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-600 cursor-pointer" 
-                      onClick={() => handleToggle(job.id)}
-                    >
-                      {activeId === job.id ? '-' : '+'}
+                    <span className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-600">
+                      {activeId === job.id ? "-" : "+"}
                     </span>
                   </div>
                   <div
@@ -176,24 +180,48 @@ export const Career: React.FC = () => {
                     }`}
                   >
                     <div className="space-y-4 text-base md:text-xl">
-                      <p className="text-gray-600"><strong>Description:</strong> <span className="text-gray-500">{job.description}</span></p>
-                      <p className="text-gray-600"><strong>Responsibilities:</strong></p>
+                      <p className="text-gray-600">
+                        <strong>Description:</strong>{" "}
+                        <span className="text-gray-500">{job.description}</span>
+                      </p>
+                      <p className="text-gray-600">
+                        <strong>Responsibilities:</strong>
+                      </p>
                       <ul className="list-disc pl-5 text-gray-500">
                         {job.responsibilities.map((item, index) => (
                           <li key={index}>{item}</li>
                         ))}
                       </ul>
-                      <p className="text-gray-600"><strong>Skills and Qualifications:</strong></p>
+                      <p className="text-gray-600">
+                        <strong>Skills and Qualifications:</strong>
+                      </p>
                       <ul className="list-disc pl-5 text-gray-500">
                         {job.skills.map((skill, index) => (
                           <li key={index}>{skill}</li>
                         ))}
                       </ul>
-                      <p className="text-gray-600"><strong>Employment Type:</strong> <span className="text-gray-500">{job.employmentType}</span></p>
-                      <p className="text-gray-600"><strong>Experience:</strong> <span className="text-gray-500">{job.experience}</span></p>
-                      <p className="text-gray-600"><strong>Salary:</strong> <span className="text-gray-500">{job.salary}</span></p>
-                      <p className="text-gray-600"><strong>Job Location:</strong> <span className="text-gray-500">{job.location}</span></p>
-                      <p className="text-gray-600"><strong>Hiring Insights:</strong> <span className="text-gray-500">{job.insights}</span></p>
+                      <p className="text-gray-600">
+                        <strong>Employment Type:</strong>{" "}
+                        <span className="text-gray-500">
+                          {job.employmentType}
+                        </span>
+                      </p>
+                      <p className="text-gray-600">
+                        <strong>Experience:</strong>{" "}
+                        <span className="text-gray-500">{job.experience}</span>
+                      </p>
+                      <p className="text-gray-600">
+                        <strong>Salary:</strong>{" "}
+                        <span className="text-gray-500">{job.salary}</span>
+                      </p>
+                      <p className="text-gray-600">
+                        <strong>Job Location:</strong>{" "}
+                        <span className="text-gray-500">{job.location}</span>
+                      </p>
+                      <p className="text-gray-600">
+                        <strong>Hiring Insights:</strong>{" "}
+                        <span className="text-gray-500">{job.insights}</span>
+                      </p>
                     </div>
                   </div>
                 </li>
