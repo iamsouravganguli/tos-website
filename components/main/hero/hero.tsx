@@ -15,6 +15,13 @@ export function Hero() {
     image,
   } = heroData;
 
+  const handleScroll = () => {
+    const nextSection = document.getElementById("services");
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="bg-light pt-16">
       <div className="max-w-screen-xl flex items-center mx-auto flex-col lg:flex-row pt-10 sm:pt-10 pb-10 px-4 sm:px-8 md:px-4 xl:px-0">
@@ -30,18 +37,29 @@ export function Hero() {
             business.
           </div>
           <div className="flex justify-center">
-            <a
-              className="inline-flex items-center border-0 mt-4 transition duration-500 ease-in-out transform ring-offset-current ring-offset-2 px-5 sm:px-7 md:px-10 lg:px-11 xl:px-12 py-2 sm:py-3 md:py-4 lg:py-4 xl:py-5 font-semibold rounded-lg text-xl md:text-2xl text-white bg-medium-light focus:outline-none hover:bg-medium md:mt-0 focus:shadow-outline focus:ring-2"
-              href="#contact_us"
+            <button
+              onClick={handleScroll}
+              className="relative flex items-center px-8 py-4 overflow-hidden font-medium transition-all bg-indigo-500 rounded-md group"
             >
-              Get Started
-            </a>
+              <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-indigo-700 rounded group-hover:-mr-4 group-hover:-mt-4">
+                <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+              </span>
+              <span className="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-indigo-700 rounded group-hover:-ml-4 group-hover:-mb-4">
+                <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+              </span>
+              <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-indigo-600 rounded-md group-hover:translate-x-0"></span>
+              <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">
+                Get Started
+              </span>
+            </button>
           </div>
         </div>
         <div className="w-full sm:w-3/4 lg:w-2/5 xl:w-1/2">
-        
-        
-        <img className="object-cover object-center rounded-lg" alt="hero" src="/assets/hero.svg" />
+          <img
+            className="object-cover object-center rounded-lg"
+            alt="hero"
+            src="/assets/hero.svg"
+          />
         </div>
       </div>
     </section>

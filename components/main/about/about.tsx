@@ -6,10 +6,11 @@ export function AboutSection() {
   const { title, description } = aboutUsData;
 
   return (
-    <section className="text-gray-900 body-font">
+    <section className="text-gray-900 body-font"
+    id="about-us">
       <div
         className="max-w-screen-xl mx-auto flex pt-20 items-center pb-20 sm:pb-28 md:pb-36 flex-col-reverse px-4 sm:px-8 md:px-4 lg:px-4 xl:px-5 lg:flex-row"
-        id="about_us"
+        
       >
         <div className="w-full sm:w-full md:w-3/5 lg:w-1/2 mb-0 items-center flex justify-center md:justify-end mt-10 sm:mt-14 md:mt-10 lg:mt-0 mr-0 lg:mr-24 xl:mr-44 rounded-md">
           <img
