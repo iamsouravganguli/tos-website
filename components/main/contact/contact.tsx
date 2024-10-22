@@ -163,7 +163,7 @@ export function ContactForm() {
                   Facebook
                 </span>
                 <Link
-                  href="https://www.facebook.com"
+                  href="https://www.facebook.com/media.tos.systems"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -179,7 +179,7 @@ export function ContactForm() {
                   LinkedIn
                 </span>
                 <Link
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/company/media-tos-system"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -195,7 +195,7 @@ export function ContactForm() {
                   Instagram
                 </span>
                 <Link
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/media.tos.systems"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
