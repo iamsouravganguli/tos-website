@@ -39,3 +39,8 @@ export type HeroData = {
   
 
 
+  export type TeamMember = {
+    name: string;
+    role: string;
+    imageUrl: string;
+  };

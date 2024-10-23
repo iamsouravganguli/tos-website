@@ -1,4 +1,4 @@
-import { AboutSection, Hero, Navbar, Footer, ContactForm, TechnologiesSection, DiscoverSection, Services, ClientDomains } from "@/components";
+import { AboutSection, Hero, Navbar, Footer, ContactForm, TechnologiesSection, DiscoverSection, Services, ClientDomains, Teams } from "@/components";
 import EmiCalculator from "@/components/emi-cal/emiCalculator";
 
 import { FAQSection } from "@/components/main/faq/faq";
@@ -17,8 +17,8 @@ export default function Home() {
         <EmiCalculator/>
         <FAQSection/>
         <ContactForm/>
-       
-      
+        <Teams/>
+        
     </div>    
   );
 }

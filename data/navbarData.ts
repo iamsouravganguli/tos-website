@@ -5,5 +5,6 @@ export const navbarData: NavItem[] = [
     { href: '/#about-us', label: 'About Us' },
     { href: '/#technologies', label: 'Technologies' },
     { href: '/#faq', label: 'FAQs' },
+    { href: '/privacy-policy', label: 'Privacy-Policy' },
 
   ];
