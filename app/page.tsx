@@ -2,6 +2,7 @@ import { AboutSection, Hero, Navbar, Footer, ContactForm, TechnologiesSection, D
 import EmiCalculator from "@/components/emi-cal/emiCalculator";
 
 import { FAQSection } from "@/components/main/faq/faq";
+import TeamColLarge from "@/components/main/teams/teamColLarge";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <FAQSection/>
         <ContactForm/>
         <Teams/>
+        <TeamColLarge/>
         
     </div>    
   );

@@ -1,5 +1,4 @@
-// Teams.tsx
-"use client"; 
+"use client";
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react"; // Import Swiper components
@@ -11,8 +10,6 @@ import "swiper/css/pagination";
 import TeamMemberCard from "./teammembercard";
 import { teamsData } from "@/data/teamsData";
 
-
-
 export const Teams: React.FC = () => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -20,31 +17,32 @@ export const Teams: React.FC = () => {
         <p className="inline-block mb-4 font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-title tracking-wider text-dark uppercase rounded-full bg-teal-accent-400">
           The Minds Behind
         </p>
-        <p className="text-base text-gray-700 md:text-lg leading-relaxed" >
-          The creative force driving our ideas, innovation, and growth, turning vision into reality every day.
+        <p className="text-base text-gray-700 md:text-lg leading-relaxed">
+          The creative force driving our ideas, innovation, and growth, turning
+          vision into reality every day.
         </p>
       </div>
 
       <Swiper
         modules={[Autoplay, Navigation, Pagination]}
         spaceBetween={20}
-        slidesPerView={1}
-        loop={true} // Enables infinite looping
+        slidesPerView={1} 
+        loop={true}
         autoplay={{
-          delay: 3000, // Set the delay for autoplay in milliseconds
-          disableOnInteraction: false, // Continue autoplay after user interaction
+          delay: 3000,
+          disableOnInteraction: false,
         }}
         breakpoints={{
           640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          840: {
-            slidesPerView: 3,
+            slidesPerView: 1, // Show 2 slides on screens larger than 640px
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 2, 
+            spaceBetween: 20,
+          },
+          1280: {
+            slidesPerView: 2, // Keep showing 3 slides on even larger screens
             spaceBetween: 20,
           },
         }}
@@ -52,10 +50,13 @@ export const Teams: React.FC = () => {
       >
         {teamsData.map((teamMember, index) => (
           <SwiperSlide key={index}>
-            <TeamMemberCard 
-              name={teamMember.name} 
-              role={teamMember.role} 
-              imageUrl={teamMember.imageUrl} 
+            <TeamMemberCard
+              name={teamMember.name}
+              role={teamMember.role}
+              imageUrl={teamMember.imageUrl}
+              email={teamMember.email}
+              linkedin={teamMember.linkedin}
+              review={teamMember.review}
             />
           </SwiperSlide>
         ))}

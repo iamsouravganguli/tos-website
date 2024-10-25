@@ -42,5 +42,8 @@ export type HeroData = {
   export type TeamMember = {
     name: string;
     role: string;
+    email: string;
+    linkedin: string;
     imageUrl: string;
+    review: string;
   };
