@@ -32,7 +32,7 @@ export function Footer() {
         
         <div className=" text-sm text-white">
           <span>
-            © {new Date().getFullYear()} <Link href="/" className="hover:underline">Totally Optimized Solutions</Link>. All Rights Reserved.
+            © {new Date().getFullYear()} <Link href="/" className="hover:underline">Totally Optimised Solutions</Link>. All Rights Reserved.
           </span>
         </div>
 

@@ -17,7 +17,7 @@ export function TechnologiesSection() {
             className="mb-8 mt-8 leading-relaxed text-gray-700 text-lg sm:text-pera"
             style={{lineHeight: "2.5rem"}}
           >
-            Double slash Internet Pvt. Ltd. works with a variety of web and
+            Totally Optimised Solutions works with a variety of web and
             mobile technologies every day for different projects &amp; clients.
             Here’s some of the tech you’ll find us using.
           </div>

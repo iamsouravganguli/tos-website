@@ -34,16 +34,20 @@ export const Teams: React.FC = () => {
         }}
         breakpoints={{
           640: {
-            slidesPerView: 1, // Show 2 slides on screens larger than 640px
+            slidesPerView: 1, // Show 1 slide on screens smaller than 640px
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2, // Show 2 slides on screens larger than 768px
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 2, 
-            spaceBetween: 20,
+            slidesPerView: 2, // Show 2 slides on larger screens
+            spaceBetween: 30,
           },
           1280: {
-            slidesPerView: 2, // Keep showing 3 slides on even larger screens
-            spaceBetween: 20,
+            slidesPerView: 3, // Show 3 slides on even larger screens
+            spaceBetween: 40,
           },
         }}
         className="mySwiper"

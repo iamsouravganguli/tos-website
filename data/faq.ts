@@ -8,8 +8,8 @@ export interface FAQItem {
   export const faqData: FAQItem[] = [
     {
       id: 1,
-      question: "What is Totally Optimized Solutions?",
-      answer: "Totally Optimized Solutions is a leading IT company specializing in custom software development, IT consulting, and digital transformation services. We focus on delivering tailored solutions that drive business success and innovation."
+      question: "What is Totally Optimised Solutions?",
+      answer: "Totally Optimised Solutions is a leading IT company specializing in custom software development, IT consulting, and digital transformation services. We focus on delivering tailored solutions that drive business success and innovation."
     },
     {
       id: 2,
