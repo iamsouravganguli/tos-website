@@ -4,7 +4,7 @@ export const teamsData: TeamMember[] = [
   {
     name: 'Piyush Sarwaariya',
     role: 'Founder and CEO',
-    imageUrl: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
+    imageUrl: '/assets/team/Piyush.jpg',
     email: 'piyush@example.com',
     linkedin: 'https://linkedin.com/in/piyush',
     review: 'I am the CEO of this company and I lead our vision and strategy.',
@@ -12,7 +12,7 @@ export const teamsData: TeamMember[] = [
   {
     name: 'Sourav Ganguli',
     role: 'Chief Technology Officer (CTO)',
-    imageUrl: 'https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    imageUrl: '/assets/team/Saurav.jpg',
     email: 'sourav@example.com',
     linkedin: 'https://linkedin.com/in/sourav',
     review: 'I oversee the technological development and ensure we stay ahead of the curve.',
@@ -20,7 +20,7 @@ export const teamsData: TeamMember[] = [
   {
     name: 'Amit Tiwari',
     role: 'Software Development Manager',
-    imageUrl: 'https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    imageUrl: '/assets/team/Amit.jpg',
     email: 'amit@example.com',
     linkedin: 'https://linkedin.com/in/amit',
     review: 'I manage our software development teams and help turn ideas into reality.',
@@ -28,7 +28,7 @@ export const teamsData: TeamMember[] = [
   {
     name: 'Abhishek Kumar',
     role: 'Web Developer',
-    imageUrl: 'https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    imageUrl: '/assets/team/Abhishek.jpg',
     email: 'abhishek@example.com',
     linkedin: 'https://linkedin.com/in/abhishek',
     review: 'I focus on creating responsive and engaging web applications for our clients.',
@@ -36,7 +36,7 @@ export const teamsData: TeamMember[] = [
   {
     name: 'Anuj Upadhyay',
     role: 'Web Developer',
-    imageUrl: 'https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    imageUrl: '/assets/team/Anuj.jpg',
     email: 'anuj@example.com',
     linkedin: 'https://linkedin.com/in/anuj',
     review: 'I work on enhancing our user interfaces and ensuring a great user experience.',

@@ -13,25 +13,27 @@ type TeamMemberCardProps = {
 
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ name, role, imageUrl, email, linkedin, review }) => {
   return (
-    <div className="flex flex-col items-center bg-gray-50 rounded-lg shadow w-full sm:flex-row sm:max-w-[556px] mx-auto">
+    <div className="flex flex-col bg-gray-50 rounded-lg shadow w-[400px] h-[500px] mx-auto">
       {/* Image Section */}
-      <div className='w-full sm:w-56'>
+      <div className="w-full h-1/2">
         <img
-          className="w-full h-auto rounded-lg sm:rounded-none sm:rounded-l-lg"
+          className="w-full h-full object-contain rounded-t-lg"
           src={imageUrl}
           alt={name}
         />
       </div>
       {/* Content Section */}
-      <div className="p-5 w-full sm:w-auto">
-        <h3 className="text-xl font-bold tracking-tight text-gray-900">
-          {name}
-        </h3>
-        <span className="text-gray-500 text-sm">{role}</span>
-        <p className="mt-3 mb-4 font-light text-black">
-          {review}
-        </p>
-        <ul className="flex space-x-4 sm:mt-0">
+      <div className="p-5 w-full h-1/2 flex flex-col justify-between">
+        <div>
+          <h3 className="text-xl font-bold tracking-tight text-gray-900">
+            {name}
+          </h3>
+          <span className="text-gray-500 text-sm">{role}</span>
+          <p className="mt-3 mb-4 font-light text-black">
+            {review}
+          </p>
+        </div>
+        <ul className="flex space-x-4">
           <li>
             <Link href={`mailto:${email}`} className="text-gray-500 hover:text-gray-900">
               <FaEnvelope className="w-5 h-5" aria-hidden="true" />

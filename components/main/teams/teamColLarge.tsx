@@ -4,12 +4,12 @@ import React from 'react';
 const TeamColLarge = () => {
   // Array of image URLs
   const teamImages = [
-    "https://pagedone.io/asset/uploads/1696238644.png",
-    "https://pagedone.io/asset/uploads/1696238665.png",
-    "https://pagedone.io/asset/uploads/1696238684.png",
-    "https://pagedone.io/asset/uploads/1696238702.png",
-    "https://pagedone.io/asset/uploads/1696238720.png",
-    "https://pagedone.io/asset/uploads/1696238737.png",
+    "/assets/team/Amit.jpg",
+    "/assets/team/Saurav.jpg",
+    "/assets/team/Piyush.jpg",
+    "/assets/team/Anuj.jpg",
+    "/assets/team/Abhishek.jpg",
+    "/assets/team/Amit.jpg",
   ];
 
   return (
