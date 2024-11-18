@@ -10,69 +10,58 @@ import "swiper/css/pagination";
 
 import { ServiceCard } from "./serviceCard";
 import { servicesData } from "@/data";
-import { ClientDomains } from "./clientDomain";
 
 export const Services: React.FC = () => {
   return (
-    <>
-      <section className="md:grid bg-white text-dark max-h-screen " id="services">
-        <div className="w-full md:py-12">
-          <section className="pt-16 pb-4 bg-white m-4 md:mx-0">
-            <div className="w-[100vw]">
-              <h2 className=" text-dark text-3xl sm:text-4xl md:text-5xl font-bold md:text-center text-start mb-12">
-                Services we can help you with
-              </h2>
-              <Swiper
-                modules={[Autoplay, Navigation, Pagination]}
-                spaceBetween={20}
-                slidesPerView={1}
-                loop={true} // Enables infinite looping
-                autoplay={{
-                  delay: 2000, // Set the delay for autoplay in milliseconds
-                  disableOnInteraction: false, // Continue autoplay after user interaction
-                }}
-               
-                breakpoints={{
-                  640: {
-                    slidesPerView: 2,
-                    spaceBetween: 300,
-                  },
-                  840: {
-                    slidesPerView: 2,
-                    spaceBetween: 100,
-                  },
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 400,
-                  },
-
-                  1300: {
-                    slidesPerView: 3,
-                    spaceBetween: 100,
-                  },
-                  1400:{
-                    slidesPerView: 4,
-                    spaceBetween: 400,
-                  }
-                }}
-                className="mySwiper "
-    
-              >
-                {servicesData.map((service, index) => (
-                  <SwiperSlide key={index} style={{paddingLeft: "0px"}}>
-                    <ServiceCard
-                      title={service.title}
-                      description={service.description}
-                      image={service.image}
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-          </section>
-          
-        </div>
-      </section>
-    </>
+    <section className="bg-white text-dark md:mx-5 mx-auto max-h-screen" id="services">
+      <div className="w-full md:py-12 ">
+        <section className="pt-16 pb-4 mx-4 md:mx-0">
+          <div>
+            <h2 className="text-dark text-3xl md:text-5xl font-bold md:text-center text-start mb-12">
+              Services we can help you with
+            </h2>
+            <Swiper
+              modules={[Autoplay, Navigation, Pagination]}
+              spaceBetween={20} // Space between slides
+              slidesPerView={1}
+              loop={true} // Enables infinite looping
+              autoplay={{
+                delay: 2000, // Set the delay for autoplay in milliseconds
+                disableOnInteraction: false, // Continue autoplay after user interaction
+              }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                1024: {
+                  slidesPerView: 3, // Show 3 cards on larger screens
+                  spaceBetween: 20,
+                },
+                1300: {
+                  slidesPerView: 3, // Show 3 cards on larger screens
+                  spaceBetween: 20,
+                },
+              }}
+              className="mySwiper"
+            >
+              {servicesData.map((service, index) => (
+                <SwiperSlide key={index}>
+                  <ServiceCard
+                    title={service.title}
+                    description={service.description}
+                    image={service.image}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </section>
+      </div>
+    </section>
   );
 };

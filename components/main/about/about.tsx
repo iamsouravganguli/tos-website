@@ -12,7 +12,7 @@ export function AboutSection() {
         className="max-w-screen-xl mx-auto flex pt-20 items-center pb-20 sm:pb-28 md:pb-36 flex-col-reverse px-4 sm:px-8 md:px-4 lg:px-4 xl:px-5 lg:flex-row"
         
       >
-        <div className="w-full sm:w-full md:w-3/5 lg:w-1/2 mb-0 items-center flex justify-center md:justify-end mt-10 sm:mt-14 md:mt-10 lg:mt-0 mr-0 lg:mr-24 xl:mr-44 rounded-md">
+        <div className="w-full sm:w-full md:w-3/5 lg:w-1/2 mb-0 items-center flex justify-center md:justify-end mt-10 sm:mt-14 md:mt-10 lg:mt-0 mr-0 lg:mr-24 lg:pl-10 xl:mr-44 rounded-md">
           <img
             className="rounded-xl"
             loading="lazy"
@@ -25,7 +25,7 @@ export function AboutSection() {
             About Us
           </div>
           <div
-            className="mb-8 mt-8 leading-relaxed text-gray-700 text-lg sm:text-pera md:text-pera"
+            className="mb-8 mt-8 leading-relaxed text-gray-700 text-lg md:text-pera"
             style={{lineHeight: "2.5rem"}}
           >
             We at The Optimised Solutions always provide highly

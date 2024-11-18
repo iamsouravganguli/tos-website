@@ -4,7 +4,15 @@
 
 
 
+.mySwiper {
+  overflow: hidden; /* Prevent overflow */
+}
 
+.swiper-slide {
+  width: 100%; /* Ensure each slide takes full width */
+  display: flex; /* Ensure the content is centered */
+  justify-content: center; /* Center content horizontally */
+}
 /* Hide scrollbar for Webkit browsers */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
