@@ -69,7 +69,7 @@ export function Hero() {
             Shaping ideas into products
           </h1>
           <p className="md:text-xl text-gray-700">
-            The goal isn't to build a product. The goal is to build your business.
+            The goal isn&apos;t to build a product. The goal is to build your business.
           </p>
           <div className="w-full flex justify-center md:justify-start pb-10 md:pb-0 mt-10">
             <button
