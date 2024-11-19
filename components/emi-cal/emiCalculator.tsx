@@ -47,21 +47,6 @@ const EmiCalculator: React.FC = () => {
     borderColor: 'white',
   };
 
-  // Function to check if the device is mobile
-  const useUserAgent = () => {
-    const [userAgent, setUserAgent] = useState('');
-
-    useEffect(() => {
-      setUserAgent(navigator.userAgent);
-    }, []);
-
-    return userAgent;
-  };
-
-  const userAgent = useUserAgent();
-
-  const isMobile = /Mobile|Android/i.test(userAgent);
-
   // Dynamic styling for range input to fill the background up to the selected value
   const getRangeStyle = (value: number, min: number, max: number, color: string) => {
     return {
@@ -73,33 +58,26 @@ const EmiCalculator: React.FC = () => {
 
   return (
     <>
-      <section className="w-full flex flex-col items-center mx-auto lg:flex-row-reverse py-20 sm:pt-16 md:pt-16 lg:pt-28 xl:pt-36 lg:pb-28 xl:pb-36 px-4 sm:px-8 md:px-4 lg:px-4 xl:px-0 lg:mr-4 xl:mr-auto overflow-y-hidden overflow-x-hidden bg-light">
-        <div className="flex flex-col w-full lg:w-3/5 xl:w-1/2 items-start text-left">
-          <div className=" text-dark font-extrabold text-left leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
+      <section className="w-full px-10  flex flex-col items-center lg:flex-row-reverse py-20 sm:pt-16 md:pt-16 lg:pt-28 xl:pt-36 lg:pb-28 xl:pb-36 sm:px-4 md:px-4 lg:px-10 xl:px-0 lg:mr-4 xl:mr-auto overflow-y-hidden overflow-x-hidden bg-light">
+        <div className="flex flex-col w-full lg:w-3/5 xl:w-1/2 items-start text-left mb-6 lg:mb-0">
+          <div className="text-dark font-extrabold text-left leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">
             Flexible EMI Options for Your Convenience
           </div>
-          <div
-            className="mb-8 mt-8 leading-relaxed text-gray-700 text-lg sm:text-pera"
-            style={{ lineHeight: '2.5rem' }}
-          >
+          <div className="mb-8 mt-8 leading-relaxed text-gray-700 text-lg sm:text-pera" style={{ lineHeight: '2.5rem' }}>
             Explore our EMI calculator to understand your repayment options. Adjust the loan amount,
             tenure, and interest rate to find a plan that fits your needs.
           </div>
         </div>
 
-      <div className="max-w-4xl sm:mx-auto py-6 sm:px-6 px-2">
-      
+        <div className="max-w-4xl sm:mx-auto py-6 sm:px-6 px-2">
           {/* Container for responsiveness */}
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="flex flex-col lg:flex-row items-start justify-between  gap-6">
             {/* Left side: Sliders and EMI details */}
-            <div className="w-full lg:w-1/2 space-y-6">
+            <div className="px-10 md:px-0 lg:w-1/2 space-y-6 ">
               {/* Loan Amount Slider */}
-              <div>
-                <label
-                  htmlFor="loanAmount"
-                  className="w-full flex justify-between text-sm font-medium text-gray-700 mb-2"
-                >
-                  <span>Amount:</span>₹{loanAmount}
+              <div className='lg:pl-10'>
+                <label htmlFor="loanAmount" className="w-full flex justify-between text-sm font-medium text-gray-700 mb-2">
+                  <span>Amount:</span> ₹{loanAmount}
                 </label>
                 <input
                   type="range"
@@ -115,12 +93,9 @@ const EmiCalculator: React.FC = () => {
               </div>
 
               {/* Loan Term Slider */}
-              <div>
-                <label
-                  htmlFor="months"
-                  className="flex w-full justify-between text-sm font-medium text-gray-700 mb-2"
-                >
-                  <span>Length: </span> {months} months
+              <div className='lg:pl-10'>
+                <label htmlFor="months" className="flex w-full justify-between text-sm font-medium text-gray-700 mb-2">
+                  <span>Length:</span> {months} months
                 </label>
                 <input
                   type="range"
@@ -131,17 +106,14 @@ const EmiCalculator: React.FC = () => {
                   value={months}
                   onChange={(e) => setMonths(Number(e.target.value))}
                   className="w-full appearance-none rounded-lg h-2 cursor-pointer"
-                  style={getRangeStyle(months, 1, 12, '#8286fd')
-                
-                  }
+                  style={getRangeStyle(months, 1, 12, '#8286fd')}
                 />
               </div>
-              <div>
-                <label
-                  htmlFor="interestRate"
-                  className="w-full flex justify-between text-sm font-medium text-gray-700 mb-2"
-                >
-                  <span>Interest Rate per annum: </span> {interestRate}%
+
+              {/* Interest Rate Slider */}
+              <div className='lg:pl-10'>
+                <label htmlFor="interestRate" className="w-full flex justify-between text-sm font-medium text-gray-700 mb-2">
+                  <span>Interest Rate per annum:</span> {interestRate}%
                 </label>
                 <input
                   type="range"
@@ -157,7 +129,7 @@ const EmiCalculator: React.FC = () => {
               </div>
 
               {/* EMI Result Display */}
-              <div className="mt-4 p-4 bg-[#8286fd] rounded-lg min-w-[340px]">
+              <div className="mt-4 p-4 bg-[#8286fd] rounded-lg  md:ml-0 lg:ml-10">
                 <p className="text-lg font-medium text-white">
                   Monthly Payable: ₹{emi.toFixed(2)}/mo
                 </p>
@@ -174,21 +146,22 @@ const EmiCalculator: React.FC = () => {
           </div>
 
           {/* Bottom row for Principal, Interest, and Total Payable amounts */}
-          <div className="flex flex-row lg:flex-row justify-between items-center mt-6 md:mt-6 p-4 py-2 bg-white rounded-lg order-first lg:order-none gap-4 min-w-[340px]">
-            <div className="text-center lg:text-left mb-2 lg:mb-0">
+          <div className="flex flex-row px-10   lg:ml-10 justify-between items-center mt-12  p-4 py-2 bg-white rounded-lg gap-4 min-w-[340px]">
+            <div className="text-center mb-2">
               <p className="text-gray-700 font-medium">Principal</p>
               <p className="text-purple-700">₹{loanAmount}</p>
             </div>
-            <div className="text-center lg:text-left mb-2 lg:mb-0">
+            <div className="text-center mb-2">
               <p className="text-gray-700 font-medium">Interest</p>
               <p className="text-purple-700">₹{totalInterest.toFixed(2)}</p>
             </div>
-            <div className="text-center lg:text-left mb-2 lg:mb-0">
+            <div className="text-center mb-2">
               <p className="text-gray-700 font-medium">Total Payable</p>
               <p className="text-purple-700">₹{(loanAmount + totalInterest).toFixed(2)}</p>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 md:hidden flex justify-center items-center order-last lg:order-none mt-4">
+
+          <div className="w-full lg:w-1/2 md:hidden flex justify-center items-center mt-4">
             <div className="w-64 h-64 md:w-72 md:h-72">
               <h2 className="text-center text-xl font-semibold mb-2 text-gray-700">Payment Breakup</h2>
               <Doughnut data={data} options={options} />
@@ -200,4 +173,4 @@ const EmiCalculator: React.FC = () => {
   );
 };
 
-export default EmiCalculator;
+export default EmiCalculator

@@ -30,7 +30,7 @@ export function TechnologiesSection() {
           <h1 className="text-dark flex justify-center items-center font-extrabold md:text-5xl text-2xl">we use</h1>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5  md:mt-10">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5  md:mt-10">
           <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center">
             <Image src={reactimg} alt={""} width={80} height={20} />
           </div>

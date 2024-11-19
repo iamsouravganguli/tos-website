@@ -61,11 +61,10 @@ export function ContactForm() {
     <section className="w-full bg-light py-20 " id="contact-us">
       <div className=" max-w-6xl max-lg:max-w-3xl mx-auto bg-white shadow-md rounded-lg">
         <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 pb-8 font-[sans-serif] ">
-          <div>
-            <h1 className="text-4xl font-bold text-dark">Get in Touch</h1>
-            <p className="text-sm  mt-4 leading-relaxed text-gray-600">
-              Have some big idea or brand to develop and need help? Then reach
-              out we&apos;d love to hear about your project and provide help.
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="md:text-4xl text-2xl font-bold text-dark flex justify-center items-center text-center">Have a groundbreaking idea for a project? </h1>
+            <p className="md:text-sm text-xs flex  text-center mt-4 leading-relaxed text-gray-600">
+              Then reach out we&apos;d love to hear about your project and provide help.
             </p>
 
             <ul className="mt-12 flex space-x-6">
@@ -157,7 +156,7 @@ export function ContactForm() {
 
             {/*socials*/}
 
-            <ul className="flex justify-start items-center list-none w-full py-10">
+            <ul className="flex justify-center items-center list-none w-full py-10">
               <li className="relative bg-white rounded-full mr-2 w-12 h-12 text-lg flex justify-center items-center shadow-lg cursor-pointer transition-transform duration-200 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] hover:scale-110 group">
                 <span className="absolute bottom-14 bg-white text-indigo-500 text-sm px-2 py-1 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] translate-y-0 group-hover:translate-y-0">
                   Facebook
@@ -209,41 +208,39 @@ export function ContactForm() {
             </ul>
           </div>
 
-          <div className="bg-slate-100 p-6 pb-8  rounded-lg shadow-md">
-            <p className="text-sm font-semibold text-gray-800">
-              I&apos;m interested in...
+          <div className="bg-slate-100 p-6 pb-8  rounded-lg shadow-lg shadow-blue-300">
+            <p className="text-2xl  font-semibold text-gray-800">
+              Contact Us
             </p>
             <form className="mt-8 space-y-4">
-              <div className="space-y-4 max-lg:mt-4">
-                {["Web Design", "Graphic Design", "AI Bots"].map(
-                  (interest, index) => (
-                    <Controller
-                      key={index}
-                      name="interest"
-                      control={control}
-                      render={({ field }) => (
-                        <button
-                          {...field}
-                          type="button"
-                          className={`px-4 py-2 rounded-lg ${
-                            activeButton === interest
-                              ? "text-white bg-medium-light"
-                              : "text-gray-600 bg-transparent border-gray-300"
-                          } text-sm tracking-wider font-medium outline-none border-2 mr-4`}
-                          onClick={() => handleInterestClick(interest)}
-                        >
-                          {interest}
-                        </button>
-                      )}
-                    />
-                  )
-                )}
-                {errors.name && (
-                  <p className="text-red-500 text-xs mt-1">
-                    {errors.name.message}
-                  </p>
-                )}
-              </div>
+            <div className="space-y-4 max-lg:mt-4 flex flex-col lg:flex-row lg:justify-start lg:space-x-4 lg:space-y-0 items-center">
+  {["Web Design", "Graphic Design", "AI Bots"].map((interest, index) => (
+    <Controller
+      key={index}
+      name="interest"
+      control={control}
+      render={({ field }) => (
+        <button
+          {...field}
+          type="button"
+          className={`px-4 py-2 rounded-lg ${
+            activeButton === interest
+              ? "text-white bg-medium-light"
+              : "text-gray-600 bg-transparent border-gray-300"
+          } text-sm tracking-wider font-medium outline-none border-2 transform transition-transform duration-200 hover:scale-105`}
+          onClick={() => handleInterestClick(interest)}
+        >
+          {interest}
+        </button>
+      )}
+    />
+  ))}
+  {errors.name && (
+    <p className="text-red-500 text-xs mt-1">
+      {errors.name.message}
+    </p>
+  )}
+</div>
 
               <div className="relative mb-4">
                 <Controller

@@ -13,8 +13,8 @@ const TeamColLarge = () => {
   ];
 
   return (
-    <section className="py-24 bg-light">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="py-24 bg-light flex justify-between items-center gap-10">
+      {/* <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center flex-col lg:flex-row md:mt-20">
           <div className="w-full lg:w-1/2">
             <h2 className="font-manrope text-5xl text-[#02077d] font-bold leading-[4rem] mb-7 text-center lg:text-left">
@@ -74,7 +74,100 @@ const TeamColLarge = () => {
             </div>
           </div>
         </div>
+      </div> */}
+      {/* <div className="flex justify-center items-center text-center flex-col lg:flex-row mx-10">
+  <div className="flex-1 p-4 lg:border-r mt-20 lg:border-gray-300 justify-center text-center items-center">
+    <h1 className='text-4xl mb-4 flex font-bold text-center'></h1>
+    <h1 className='text-3xl italic mb-4 flex  flex-col text-center '>
+      <span className='font-bold mb-5 text-4xl'>Innovative custom solutions</span>
+      We build custom applications for startups, enterprises, B2B, and B2C to meet your goals and exceed your expectations for success.
+    </h1>
+  </div>
+
+  <div className="flex-1 p-4 bottom-0">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="relative col-span-1">
+        <div className="group relative block rounded-xl overflow-hidden focus:outline-none">
+          <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+            <img className="group-hover:scale-105 group-focus:scale-105 w-full transition-transform duration-500 ease-in-out rounded-xl object-cover" src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3481&q=80" alt="Image Description"/>
+          </div>
+          <div className="absolute bottom-0 left-0 right-0 transform p-2">
+            <div className="font-semibold flex justify-center text-center items-center text-gray-800 rounded-lg bg-white p-2 dark:bg-neutral-800 dark:text-neutral-200">
+              <p>Workplace personalities</p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div className="relative -mt-10">
+        <div className="group relative block rounded-xl overflow-hidden focus:outline-none">
+          <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+            <img className="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="Image Description"/>
+          </div>
+          <div className="absolute bottom-0 left-0 right-0 transform p-2">
+            <div className="font-semibold text-gray-800 rounded-lg bg-white p-3 dark:bg-neutral-800 dark:text-neutral-200">
+              Women in engineering
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative col-span-1">
+        <a className="group relative block rounded-xl overflow-hidden focus:outline-none" href="#">
+          <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+            <img className="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1606836576983-8b458e75221d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description"/>
+          </div>
+          <div className="absolute bottom-0 left-0 right-0 p-2">
+            <div className="font-semibold text-gray-800 rounded-lg bg-white p-3 dark:bg-neutral-800 dark:text-neutral-200">
+              Pride 2021
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div className="relative col-span-1 -mt-10">
+        <a className="group relative block rounded-xl overflow-hidden focus:outline-none" href="#">
+          <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+            <img className="group-hover:scale-105 group-focus:scale-105 transition-transform duration ```javascript
+            -500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1598929438701-ef29ab0bb61a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" alt="Image Description"/>
+          </div>
+          <div className="absolute bottom-0 left-0 right-0 p-2">
+            <div className="font-semibold text-gray-800 rounded-lg bg-white p-3 dark:bg-neutral-800 dark:text-neutral-200">
+              Data at Preline
+            </div>
+          </div>
+        </a>
+      </div>
+      <div className="relative col-span-1">
+        <div className="group relative block rounded-xl overflow-hidden focus:outline-none">
+          <div className=" sm:aspect-none rounded-xl overflow-hidden">
+            <img className="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl object-cover" src="https://www.freedomiseverything.com/wp-content/uploads/2022/01/best-laptop-for-working-from-home.jpg " alt="Image Description"/>
+          </div>
+          <div className="absolute bottom-0 left-0 right-0 transform p-2">
+            <div className="font-semibold flex justify-center text-center items-center text-gray-800 rounded-lg bg-white p-2 dark:bg-neutral-800 dark:text-neutral-200">
+              <p>Visionary Leadership</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative col-span-1">
+        <a className="group relative block rounded-xl overflow-hidden focus:outline-none" href="#">
+          <div className=" sm:aspect-none rounded-xl overflow-hidden">
+            <img className="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="https://bsmedia.business-standard.com/_media/bs/img/article/2020-06/10/full/1591778382-7632.jpg?im=FeatureCrop,size=(400,465)" alt="Image Description"/>
+          </div>
+          <div className="absolute bottom-0 left-0 right-0 p-2">
+            <div className="font-semibold text-gray-800 rounded-lg bg-white p-3 dark:bg-neutral-800 dark:text-neutral-200">
+              Empowered management
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div> */}
+
+
     </section>
   );
 };

@@ -1,10 +1,11 @@
+import Image from "next/image";
 import React from "react";
 
 export const ClientDomains: React.FC = () => {
   const clientDomains = [
     {
       title: "Media & Entertainment",
-      description: "Helping Media & Entertainment companies grow their Customers.",
+      description: "Empowering Growth for Media & Entertainment",
       icon: "/assets/domain.svg",
     },
     {
@@ -25,40 +26,38 @@ export const ClientDomains: React.FC = () => {
   ];
 
   return (
-    <section className="text-light body-font bg-[url('/assets/bg-pattern.svg')] bg-center bg-repeat-x">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-8 lg:px-16">
-        <div className="flex flex-col justify-center items-center text-center py-16 lg:py-24">
-          <h2 className="text-dark font-extrabold leading-none text-3xl sm:text-4xl lg:text-5xl">
-            Serving the Clients
-          </h2>
-          <h2 className="text-dark font-extrabold leading-none text-3xl sm:text-4xl lg:text-5xl mt-2">
-            Across Multiple Domains
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-10 mt-12 ">
-            {clientDomains.map((domain, index) => (
-              <div
-                key={index}
-                className="flex flex-col sm:flex-row bg-white py-6 px-5 sm:px-8 lg:px-6 rounded-xl shadow-md hover:shadow-xl transition duration-500"
-              >
-                <div className="flex justify-center items-center mr-4 sm:mr-7 md:min-w-[3/4] lg:min-w-[1/2] min-h-[98px]">
-                  <div className="p-5 border rounded-xl">
-                    <img
-                      src={domain.icon}
-                      alt={domain.title}
-                      className="h-10 sm:h-14 w-10 md:w-80 lg:w-[3/4] xl:w-60 sm:w-14 object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col justify-center font-extrabold text-xl sm:text-2xl">
-                  {domain.title}
-                  <p className="mt-2 text-gray-500 font-medium text-base sm:text-lg">
-                    {domain.description}
-                  </p>
-                </div>
+    <section className="flex flex-col  justify-center items-center mt-10">
+      <h1 className="text-dark font-extrabold leading-none px-5 text-2xl md:text-4xl lg:text-5xl xl:text-6xl">
+        Serving the Clients
+      </h1>
+      <h1 className="text-dark font-extrabold leading-none text-2xl md:text-4xl lg:text-5xl xl:text-6xl">
+        Across Multiple Domains
+      </h1>
+      <div className="mt-10 w-full px-10 ">
+        <div
+          className={`grid gap-6 ${
+            clientDomains.length === 2
+              ? 'lg:grid-cols-2'
+              : 'lg:grid-cols-3 md:grid-cols-2 grid-cols-1'
+          }`}
+        >
+          {clientDomains.map((item, index) => (
+            <div
+              key={index}
+              className=" gap-5 flex h-44 xl:h-50 place-items-center justify-center text-center p-4 rounded-lg shadow-md bg-white"
+            >
+              <div className="border border-gray-300 p-2 rounded-lg">
+                <Image src={item.icon} alt="" width={120} height={50} />
               </div>
-            ))}
-          </div>
+              <div className="flex flex-col pl-2 text-left">
+                <h1 className="font-bold text-lg">{item.title}</h1>
+                <p className="text-gray-500">{item.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
+        {/* Centering logic for uneven number of items */}
+        
       </div>
     </section>
   );
