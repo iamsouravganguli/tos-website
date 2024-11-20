@@ -372,7 +372,7 @@ export const Navbar: React.FC = () => {
         </li>
       </div>
     </ul>
-    <div className="flex flex-col pl-6 mt-4">
+    {/* <div className="flex flex-col pl-6 mt-4">
       <div className="flex gap-2 mb-2 items-center">
         <Mail className="bg-blue-500 rounded-full p-1 text-white" size={40} />
         <p className="text-xs text-black items-center text-center">
@@ -387,7 +387,7 @@ export const Navbar: React.FC = () => {
         </div>
         
       </div>
-    </div>
+    </div> */}
   </div>
 </>
 
