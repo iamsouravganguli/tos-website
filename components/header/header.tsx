@@ -151,6 +151,7 @@
 // };
 
 import React, { useState, useRef, useEffect } from "react";
+import { Mail,Phone } from 'lucide-react';
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { navbarData } from "@/data";
@@ -190,7 +191,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`bg-white fixed w-full z-20 top-0 border-b border-gray-200 overflow-x-hidden ${
+      className={`bg-white fixed w-full z-20 left-0 top-0 border-b border-gray-200 overflow-x-hidden ${
         isScrolled ? "shadow-md" : ""
       }`}
     >
@@ -224,7 +225,7 @@ export const Navbar: React.FC = () => {
           <Link href="/career">
             <button className="relative inline-flex items-center justify-center lg:px-7 md:px-3 py-2 overflow-hidden tracking-tighter text-black bg-white rounded-md border border-violet-400 group transition-all duration-300 ease-in-out">
               <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-medium-light rounded-full group-hover:w-56 group-hover:h-56"></span>
-              <span className="relative md:text-sm lg:text-base xl:text-xl font-medium group-hover:text-white transition-colors duration-300 ease-in-out">
+              <span className="relative md:text-sm lg:text-lg xl:text-xl font-medium group-hover:text-white transition-colors duration-300 ease-in-out">
                 Careers
               </span>
             </button>
@@ -245,7 +246,7 @@ export const Navbar: React.FC = () => {
         >
           <span className="sr-only">Open main menu</span>
           {isOpen ? (
-            <FaTimes className="w-6 h-6" />
+            <p></p>
           ) : (
             <FaBars className="w-6 h-6" />
           )}
@@ -253,7 +254,7 @@ export const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Drawer Menu from Top */}
-      <div
+      {/* <div
         ref={menuRef}
         className={`fixed top-0 left-0 w-full bg-white md:hidden  shadow-md transition-transform transform ${
           isOpen ? "translate-y-0" : "-translate-y-full"
@@ -307,7 +308,89 @@ export const Navbar: React.FC = () => {
             </li>
           </div>
         </ul>
+      </div> */}
+      <>
+  {/* Overlay */}
+  {isOpen && (
+    <div
+      className="fixed inset-0 bg-black bg-opacity-50 z-50 transition-opacity duration-300 md:hidden"
+      onClick={() => setIsOpen(false)}
+    />
+  )}
+  <div
+    ref={menuRef}
+    className={`fixed top-0 left-0 w-64 h-full bg-white shadow-md transition-transform transform ${
+      isOpen ? "translate-x-0" : "-translate-x-full"
+    } ease-in-out duration-300 z-50 md:hidden`}
+  >
+    {/* Sidebar Content */}
+    <div className="flex items-center justify-between border-b border-gray-200 p-4">
+      <Link href="/">
+        <img
+          src="/assets/LogoNav.png"
+          alt="YourLogo"
+          className="h-8 w-auto cursor-pointer"
+        />
+      </Link>
+      <button
+        type="button"
+        className="p-2 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        onClick={() => setIsOpen(false)}
+      >
+        <span className="sr-only">Close menu</span>
+        <FaTimes className="w-6 h-6" />
+      </button>
+    </div>
+    <ul className="flex flex-col p-4 font-medium bg-white">
+      {navbarData.map((item) => (
+        <li key={item.href}>
+          <Link
+            href={item.href}
+            className="block py-2 px-3 text-black rounded hover:bg-gray-200 transition-all duration-500 ease-in-out"
+          >
+            {item.label}
+          </Link>
+        </li>
+      ))}
+      <div className="flex flex-row gap-1 mx-2 mt-4">
+        <li>
+          <Link href="/career">
+            <button className="relative inline-flex items-center justify-center px-5 md:px-7 py-2 overflow-hidden tracking-tighter text-black bg-white border border-violet-400 rounded-md group transition-all duration-300 ease-in-out">
+              <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-medium-light rounded-full group-hover:w-56 group-hover:h-56"></span>
+              <span className="relative text-sm md:text-base font-semibold group-hover:text-white transition-colors duration-300 ease-in-out">
+                Careers
+              </span>
+            </button>
+          </Link>
+        </li>
+        <li>
+          <Link href="/#contact-us">
+            <button className="text-white bg-medium-light hover:bg-white hover:text-dark font-semibold rounded-md text-sm md:text-base py-2 px-2  shadow duration-700 border border-medium">
+              Contact Us
+            </button>
+          </Link>
+        </li>
       </div>
+    </ul>
+    <div className="flex flex-col pl-6 mt-4">
+      <div className="flex gap-2 mb-2 items-center">
+        <Mail className="bg-blue-500 rounded-full p-1 text-white" size={40} />
+        <p className="text-xs text-black items-center text-center">
+          mail.tos.systems@gmail.com
+        </p>
+      </div>
+      <div className="flex gap-2 text-sm items-center">
+        <Phone className="bg-blue-500 rounded-full p-1 text-white" size={40} />
+        <div className="flex flex-col">
+        <p>+91 &nbsp;9304251279</p>
+        <p>+91 &nbsp;9382826158</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</>
+
     </nav>
   );
 };

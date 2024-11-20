@@ -1,6 +1,7 @@
-import { AboutSection, Hero, Navbar, Footer, ContactForm, TechnologiesSection, DiscoverSection, Services, ClientDomains, Teams } from "@/components";
+import { AboutSection, Hero, Navbar, Footer, ContactForm,TechnologiesSection, DiscoverSection, Services, ClientDomains, Teams } from "@/components";
 import EmiCalculator from "@/components/emi-cal/emiCalculator";
 
+import Chat from "@/components/chatBox/chat";
 import { FAQSection } from "@/components/main/faq/faq";
 import TeamColLarge from "@/components/main/teams/teamColLarge";
 
@@ -8,7 +9,7 @@ import TeamColLarge from "@/components/main/teams/teamColLarge";
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
-     
+        
         <Hero/>
         <Services/>
         <ClientDomains/>
@@ -19,7 +20,8 @@ export default function Home() {
         <FAQSection/>
         <ContactForm/>
         <Teams/>
-        <TeamColLarge/>
+        <Chat/>
+        {/* <TeamColLarge/> */}
         
     </div>    
   );
