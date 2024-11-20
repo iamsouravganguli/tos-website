@@ -15,7 +15,7 @@ import Image from "next/image";
 
 export function TechnologiesSection() {
   return (
-    <section className="text-gray-900 py-12 px-4">
+    <section className="text-gray-900 py-12 px-4 bg-white">
       <div className="flex flex-col justify-center items-center">
       <div className="hidden md:flex">
   <h1 className="text-dark md:px-28 px-32 font-extrabold md:text-5xl text-3xl text-center leading-tight">

@@ -21,9 +21,10 @@ export function Hero() {
     }
   };
 
+  
   return (
     // <section className="bg-light pt-16">
-    <section className=" bg-light pt-16 md:pt-0">
+    <section className=" bg-light pt-16 md:pt-0 overflow-x-hidden">
       {/* <div className=" flex items-center "> */}
         {/* <div className="flex flex-col pt-0 mb-16 lg:flex-grow w-full lg:w-3/5 xl:w-1/2 pr-10 lg:pr-0 xl:pr-10 items-start text-left md:mb-0 ">
           <div className="text-dark title-font mb-2 sm:mb-3 md:mb-5 leading-none text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-main-title text-left font-extrabold text-gray-900 ">
@@ -63,7 +64,7 @@ export function Hero() {
           />
         </div> */}
       {/* </div> */}
-      <div className="flex flex-col md:flex-row items-center px-10">
+      <div className="flex flex-col md:flex-row justify-center items-center px-10">
         <div className="md:pt-40 flex items-center justify-center flex-col md:w-2/4 px-5 pt-16 md:pb-10">
           <h1 className="md:text-5xl lg:text-6xl xl:text-7xl pb-5 text-gray-900 text-dark font-extrabold leading-1 text-4xl">
             Shaping ideas into products
@@ -89,9 +90,9 @@ export function Hero() {
             </button>
           </div>
         </div>
-        <div className="md:w-2/4 flex justify-center md:mt-32">
+        <div className="md:w-2/4 w-full items-center flex justify-center md:mt-32">
           <img
-            className="object-cover object-center rounded-lg  " // Adjust the top value to position the image
+            className="object-cover object-center rounded-lg"
             alt="hero"
             src="/assets/hero.svg"
           />

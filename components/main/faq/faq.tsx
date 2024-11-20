@@ -11,7 +11,7 @@ export const FAQSection: React.FC = () => {
   };
 
   return (
-    <section className="text-gray-900 md:mx-10 xl:mx-10 lg:mx-10 px-4">
+    <section className="text-gray-900 md:mx-10 xl:mx-10 lg:mx-10 px-4 bg-white">
       <div className="max-w-screen-xl mx-auto" id="faq">
         <div className="flex flex-col justify-start px-4 sm:px-8 md:px-4 xl:px-0 pt-16 sm:pt-20 lg:pt-28 xl:pt-36 items-start">
           <div className="text-[#02077d] font-extrabold leading-none text-3xl sm:text-4xl md:text-5xl lg:text-title">

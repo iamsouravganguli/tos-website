@@ -14,7 +14,7 @@ const TeamColLarge = () => {
 
   return (
     <section className="py-24 bg-light flex justify-between items-center gap-10">
-      {/* <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center flex-col lg:flex-row md:mt-20">
           <div className="w-full lg:w-1/2">
             <h2 className="font-manrope text-5xl text-[#02077d] font-bold leading-[4rem] mb-7 text-center lg:text-left">
@@ -55,26 +55,26 @@ const TeamColLarge = () => {
                 </svg>
               </span>
               <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-200 group-hover:bg-medium-light transition-all duration-300 ease-in-out"></span>
-              <span className="relative text-base font-medium group-hover:text-white transition-colors duration-300 ease-in-out">
+              <span className="relative text-base text-center font-medium group-hover:text-white transition-colors duration-300 ease-in-out">
                Join our team
               </span>
             </button>
           </Link>
           </div>
-          <div className="w-full lg:w-1/2 lg:mt-0 md:mt-40 mt-16 max-lg:max-w-2xl">
-            <div className="grid grid-cols-3 gap-8">
+          <div className="w-full lg:w-1/2 lg:mt-0 md:mt-40 mt-16 max-lg:max-w-2xl ">
+            <div className="grid grid-cols-3 gap-8 ">
               {teamImages.map((imageUrl, index) => (
                 <img
                   key={index}
                   src={imageUrl}
                   alt={`Team member ${index + 1}`}
-                  className="w-44 md:h-52 rounded-2xl object-cover mx-auto"
+                  className="w-44 md:h-52 rounded-2xl object-cover mx-auto hover:to-black hover:opacity-5"
                 />
               ))}
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       {/* <div className="flex justify-center items-center text-center flex-col lg:flex-row mx-10">
   <div className="flex-1 p-4 lg:border-r mt-20 lg:border-gray-300 justify-center text-center items-center">
     <h1 className='text-4xl mb-4 flex font-bold text-center'></h1>
