@@ -26,7 +26,7 @@ export const ClientDomains: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col  justify-center items-center mt-10 bg-white bg-[url('/assets/bg-pattern.svg')] bg-center bg-repeat-x">
+    <section className="flex flex-col  justify-center items-center pt-10 bg-white bg-[url('/assets/bg-pattern.svg')] bg-center bg-repeat-x">
       <h1 className="text-dark font-extrabold leading-none px-5 text-2xl md:text-4xl lg:text-5xl xl:text-6xl">
         Serving the Clients
       </h1>
