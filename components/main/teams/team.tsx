@@ -12,8 +12,8 @@ import { teamsData } from "@/data/teamsData";
 
 export const Teams: React.FC = () => {
   return (
-    <div className="px-4 py-16 bg-white mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
+    <div className="px-4 py-16 bg-white  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className=" mb-10 lg:max-w-xl sm:text-center">
         <p className="inline-block mb-4 font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-title tracking-wider text-dark uppercase rounded-full bg-teal-accent-400">
           The Minds Behind
         </p>
