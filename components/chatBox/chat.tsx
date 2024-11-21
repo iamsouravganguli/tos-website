@@ -32,10 +32,10 @@ const Chat = () => {
                   <div
                         className="group flex items-center gap-2 pb-2 transition-all duration-500 ease-in-out "
                     >
-                        <Phone size={45} className="text-blue-600 py-2 bg-blue-200 rounded-full" />
-                        <Link href="9304251279"><p className="text-sm text-transparent group-hover:text-white group-hover:bg-black group-hover:opacity-90 py-1 px-3 rounded-3xl "> WhatsApp
+                       <Link href="tel:+919304251279"><Phone size={45} className="text-blue-600 py-2 bg-blue-200 rounded-full" /></Link>
+                        <p className="text-sm text-transparent group-hover:text-white group-hover:bg-black group-hover:opacity-90 py-1 px-3 rounded-3xl "> Phone
                         </p>
-                        </Link>
+                        
                            
                     </div>
 
@@ -43,10 +43,10 @@ const Chat = () => {
                     <div
                         className="group flex items-center gap-2 pb-2 transition-all duration-500 ease-in-out "
                     >
-                        <FaWhatsapp size={50} className="text-green-600 py-2 bg-green-200 rounded-full" />
-                        <Link href="9304251279"><p className="text-sm text-transparent group-hover:text-white group-hover:bg-black group-hover:opacity-90 py-1 px-3 rounded-3xl "> WhatsApp
+                        <Link href="https://wa.me/+919304251279"><FaWhatsapp size={50} className="text-green-600 py-2 bg-green-200 rounded-full" /></Link>
+                        <p className="text-sm text-transparent group-hover:text-white group-hover:bg-black group-hover:opacity-90 py-1 px-3 rounded-3xl "> WhatsApp
                         </p>
-                        </Link>
+                        
                            
                     </div>
 
