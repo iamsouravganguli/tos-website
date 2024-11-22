@@ -9,7 +9,7 @@ export const Teams: React.FC = () => {
     {
       name:"Amit Tiwari",
       position:"Software Development Manager",
-      image:"/assets/team/amit.jpg",
+      image:"/assets/team/Amit.jpg",
     },
     {
       name:"Sourav Ganguli",
