@@ -15,11 +15,12 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ name, role, imageUrl, e
   return (
     <div className="flex flex-col bg-gray-50 rounded-lg shadow w-[400px] h-[500px] mx-auto">
       {/* Image Section */}
-      <div className="w-full h-1/2">
+      <div className="">
         <img
           className="w-full h-full object-contain rounded-t-lg"
           src={imageUrl}
           alt={name}
+          width={20}
         />
       </div>
       {/* Content Section */}

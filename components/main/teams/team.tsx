@@ -9,12 +9,12 @@ export const Teams: React.FC = () => {
     {
       name:"Amit Tiwari",
       position:"Software Development Manager",
-      image:"/assets/team/Amit.jpg",
+      image:"/assets/team/amit.jpg",
     },
     {
       name:"Sourav Ganguli",
       position:"Chief Technology Officer ",
-      image:"/assets/team/Saurav.jpg",
+      image:"/assets/team/sourav.jpg",
     },
     {
       name:"Piyush Sarwaariya ",
@@ -33,7 +33,7 @@ export const Teams: React.FC = () => {
     },
   ];
   return (
-    <div className=" py-16 flex justify-center items-center text-center flex-col bg-white  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-10 lg:px-8 lg:py-20" id="team">
+    <div className="py-16 mx-auto flex justify-center items-center text-center flex-col bg-white  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-10 lg:px-8 lg:py-20" id="team">
       <div className=" mb-10 lg:max-w-xl px-5">
         <p className="mb-4 font-extrabold text-3xl  md:text-5xl lg:text-title text-dark uppercase bg-teal-accent-400">
           The Minds Behind
@@ -60,15 +60,24 @@ export const Teams: React.FC = () => {
               className="relative w-full md:w-1/3 lg:w-1/4 px-5 mb-4"
               key={index}
             >
+            {/* <div key={index} className="relative"> */}
               <div className="group overflow-hidden relative">
+              {/* <div className="relative group "> */}
                 <Image
                   decoding="async"
                   src={item.image}
                   alt="Team Member"
-                  width={500}
-                  height={300}
-                  className="lazyloaded w-[60rem] h-70 md:h-60  transition-transform duration-300 ease-in-out group-hover:scale-105"
+                  width={200}
+                  height={50}
+                  className="lazyloaded md:w-[30rem] w-[60rem]   transition-transform duration-300 ease-in-out group-hover:scale-105"
                 />
+                {/* <Image alt="teams"
+                src={item.image}
+                width={300}
+                height={300}
+                className="transition-transform duration-300 ease-in-out group-hover:scale-105 "
+                /> */}
+
                 <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center py-2 z-10">
                   <h3 className="text-lg font-bold">{item.name}</h3>
                   <p className="team-one__sub-title text-sm">{item.position}</p>
@@ -77,6 +86,7 @@ export const Teams: React.FC = () => {
                   <h3 className="font-bold text-lg">
                     <a href="#">{item.name}</a>
                   </h3>
+                  
                   <p className="team-one__sub-title team-one__hover-sub-title text-sm">
                     {item.position}
                   </p>
