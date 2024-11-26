@@ -3,7 +3,7 @@
 import React from "react";
 import Image from 'next/image';
 import Link from 'next/link';
-import {Linkedin} from "lucide-react"
+import {Linkedin,Mail} from "lucide-react"
 
 export const Teams: React.FC = () => {
   const teamImages = [
@@ -46,7 +46,7 @@ export const Teams: React.FC = () => {
     {
       name:"Diksha Thapa",
       position:"Social media Manager",
-      image:"/assets/team/diksha.jpeg",
+      image:"/assets/team/diksha.jpg",
       mail:"dikshat46@gmail.com",
       Linkedin:"https://www.linkedin.com/in/diksha-thapa-9204aa232/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
@@ -101,13 +101,13 @@ export const Teams: React.FC = () => {
                   <h3 className="text-lg font-bold">{item.name}</h3>
                   <p className="team-one__sub-title text-sm">{item.position}</p>
                 </div>
-                <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center py-2.5 z-20 transform translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0">
+                <div className="flex gap-3 justify-center items-center absolute bottom-0 left-0 w-full bg-black text-white text-center py-6 z-20 transform translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0">
                   <Link href={`mailto:${item.mail}`}  className="font-bold text-md hover:text-blue-500">
-                    {item.mail}
+                    <Mail size={20} strokeWidth={2} className=" font-thin"/>
                   </Link>
                   <div className="flex justify-center items-center ">
                   <Link href={item.Linkedin} className="flex hover:text-blue-500 underline items-center team-one__sub-title team-one__hover-sub-title text-sm">
-                  LinkedIn</Link>
+                  <Linkedin size={20}  strokeWidth={1} /></Link>
                   </div>
                 </div>
               </div>
