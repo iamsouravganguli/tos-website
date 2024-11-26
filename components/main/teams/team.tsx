@@ -46,7 +46,7 @@ export const Teams: React.FC = () => {
     {
       name:"Diksha Thapa",
       position:"Social media Manager",
-      image:"/assets/team/diksha.jpg",
+      image:"/assets/team/diksha.JPG",
       mail:"dikshat46@gmail.com",
       Linkedin:"https://www.linkedin.com/in/diksha-thapa-9204aa232/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
