@@ -3,33 +3,51 @@
 import React from "react";
 import Image from 'next/image';
 import Link from 'next/link';
+import {Linkedin} from "lucide-react"
 
 export const Teams: React.FC = () => {
   const teamImages = [
     {
-      name:"Amit Tiwari",
-      position:"Software Development Manager",
-      image:"/assets/team/amit.jpg",
-    },
-    {
       name:"Sourav Ganguli",
       position:"Chief Technology Officer ",
       image:"/assets/team/sourav.jpg",
+      mail:"sourav@tos.systems",
+      Linkedin:"https://www.linkedin.com/in/iamsouravganguli/"
     },
     {
-      name:"Piyush Sarwaariya ",
-      position:"Founder and CEO",
-      image:"/assets/team/Piyush.jpg",
+      name:"Amit Tiwari",
+      position:"Software Development Manager",
+      image:"/assets/team/Amit.jpg",
+      mail:"amit.tiwari@tos.systems",
+      Linkedin:"https://www.linkedin.com/in/amit-kumar-9372a0220/"
     },
     {
       name:"Abhishek Kumar",
       position:"Web developer",
       image:"/assets/team/Abhishek.jpg",
+      mail:"abhishek.kumar@tos.systems",
+      Linkedin:"https://www.linkedin.com/in/abhishek-kumar-9656a3220/"
+    },
+    {
+      name:"Piyush Sarwaariya ",
+      position:"Founder and CEO",
+      image:"/assets/team/Piyush.jpg",
+      mail:"piyush@tos.systems",
+      Linkedin:""
     },
     {
       name:"Anuj Upadhyay",
       position:"Web developer",
       image:"/assets/team/Anuj.jpg",
+      mail:"anuj@tos.systems",
+      Linkedin:"https://www.linkedin.com/in/anuj-upadhyay-a973b0238/"
+    },
+    {
+      name:"Diksha Thapa",
+      position:"Social media Manager",
+      image:"/assets/team/diksha.jpeg",
+      mail:"dikshat46@gmail.com",
+      Linkedin:"https://www.linkedin.com/in/diksha-thapa-9204aa232/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
   ];
   return (
@@ -82,14 +100,14 @@ export const Teams: React.FC = () => {
                   <h3 className="text-lg font-bold">{item.name}</h3>
                   <p className="team-one__sub-title text-sm">{item.position}</p>
                 </div>
-                <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center py-2 z-20 transform translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0">
-                  <h3 className="font-bold text-lg">
-                    <a href="#">{item.name}</a>
+                <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center py-2.5 z-20 transform translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0">
+                  <h3 className="font-bold text-md">
+                    <a href="#">{item.mail}</a>
                   </h3>
-                  
-                  <p className="team-one__sub-title team-one__hover-sub-title text-sm">
-                    {item.position}
-                  </p>
+                  <div className="flex justify-center items-center ">
+                  <Link href={item.Linkedin} className="flex hover:text-blue-500 underline items-center team-one__sub-title team-one__hover-sub-title text-sm">
+                  LinkedIn</Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -98,7 +116,7 @@ export const Teams: React.FC = () => {
       </div>
 
       
-      <div className="flex justify-center my-10">
+      {/* <div className="flex justify-center my-10">
         <Link href="/career">
           <button className="relative inline-flex items-center justify-center px-7 py-2 overflow-hidden tracking-tighter text-black bg-white rounded-lg border border-violet-400 group transition-all duration-300 ease-in-out">
             <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-medium-light rounded-full group-hover:w-56 group-hover:h-56"></span>
@@ -136,7 +154,7 @@ export const Teams: React.FC = () => {
             </span>
           </button>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
