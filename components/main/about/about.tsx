@@ -15,7 +15,7 @@ return (
       >
         <div className="w-full sm:w-full md:w-3/5 lg:w-1/2 mb-0 items-center flex justify-center md:justify-end mt-10 sm:mt-14 md:mt-10 lg:mt-0 mr-0 lg:mr-24 lg:pl-10 xl:mr-44 rounded-md">
           <img
-            className="rounded-xl pop-effect"
+            className="rounded-xl image-hover-effect"
             loading="lazy"
             alt="About Us"
             src="/assets/about_us.jpg"

@@ -17,7 +17,7 @@ export function DiscoverSection() {
         <div className="flex text-left sm:text-center flex-col lg:flex-row justify-center items-start relative">
           <div className="lg:flex hidden absolute w-3/4 top-16 border-dotted border-t-4 border-gray-300"></div>
           <div className="lg:p-4 w-full lg:w-1/4 flex flex-row lg:flex-col lg:justify-center lg:items-center">
-            <div className="p-5 bg-white rounded-full mb-5 z-10">
+            <div className="p-5 bg-white rounded-full mb-5 z-10 image-hover-effect">
               <svg
                 width="52"
                 height="52"
@@ -41,13 +41,14 @@ export function DiscoverSection() {
             </div>
           </div>
           <div className="lg:p-4 w-full lg:w-1/4 flex flex-row lg:flex-col lg:justify-center lg:items-center">
-            <div className="p-6 bg-white rounded-full mb-5 z-10">
+            <div className="p-6 bg-white rounded-full mb-5 z-10 image-hover-effect">
               <svg
                 width="42"
                 height="42"
                 viewBox="0 0 43 42"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className=""
               >
                 <path
                   d="M41.239 30.1996L31.1629 20.1235L35.2153 16.0711L40.8469 10.4387C42.3858 8.89977 42.385 6.40516 40.8469 4.86622L37.1349 1.15423C36.3654 0.384765 35.3564 3.05176e-05 34.3482 3.05176e-05C33.34 3.05176e-05 32.331 0.384765 31.5616 1.15423L25.93 6.78497L21.8776 10.8374L11.8023 0.762116C11.2945 0.254332 10.6284 3.05176e-05 9.96232 3.05176e-05C9.29621 3.05176e-05 8.63093 0.254332 8.12232 0.762116L0.763979 8.12128C-0.251588 9.13767 -0.252408 10.7849 0.763979 11.8013L10.8376 21.8749L1.56708 31.1446L0.0281441 39.9591C-0.194985 41.2412 0.948553 42.1657 2.04533 41.9738L10.8589 40.4283L20.1237 31.1618L30.1998 41.2379C30.4411 41.4798 30.7278 41.6717 31.0434 41.8025C31.359 41.9332 31.6974 42.0004 32.039 42C32.7051 42 33.3712 41.7457 33.879 41.2379L41.239 33.8796C42.2554 32.8632 42.2554 31.216 41.239 30.1996ZM33.4171 3.01064C33.7527 2.67512 34.943 2.67512 35.2785 3.01064L38.9905 6.7218C39.5032 7.23451 39.5032 8.06878 38.9905 8.58149L35.2145 12.3575L29.6412 6.78415L33.4171 3.01064ZM2.61956 9.97769L9.96232 2.63411L14.5521 7.21892L11.3503 10.4207C11.0944 10.6766 11.0944 11.0925 11.3503 11.3485L12.2781 12.2762C12.534 12.5322 12.95 12.5322 13.2059 12.2762L16.4085 9.07368L20.0261 12.6872L12.6842 20.0284L2.61956 9.97769ZM9.58907 37.9862L2.83039 39.1715L4.0092 32.4145L27.7848 8.64137L33.3581 14.2147L9.58907 37.9862ZM32.0562 39.3824L21.9777 29.3087L29.3171 21.9684L32.9364 25.5836L29.7248 28.796C29.4689 29.052 29.4689 29.4679 29.7248 29.7238L30.6526 30.6516C30.9086 30.9075 31.3245 30.9075 31.5804 30.6516L34.7937 27.4384L39.3826 32.0224L32.0562 39.3824Z"
@@ -65,7 +66,7 @@ export function DiscoverSection() {
             </div>
           </div>
           <div className="lg:p-4 w-full lg:w-1/4 flex flex-row lg:flex-col lg:justify-center lg:items-center">
-            <div className="p-6 bg-white rounded-full mb-5 z-10">
+            <div className="p-6 bg-white rounded-full mb-5 z-10 image-hover-effect">
               <svg
                 width="42"
                 height="42"
@@ -89,7 +90,7 @@ export function DiscoverSection() {
             </div>
           </div>
           <div className="lg:p-4 w-full lg:w-1/4 flex flex-row lg:flex-col lg:justify-center lg:items-center">
-            <div className="p-6 bg-white rounded-full mb-5 z-10">
+            <div className="p-6 bg-white rounded-full mb-5 z-10 image-hover-effect">
               <svg
                 width="42"
                 height="42"

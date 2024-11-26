@@ -46,8 +46,8 @@ export const ClientDomains: React.FC = () => {
               key={index}
               className=" gap-5 flex h-44 xl:h-50 place-items-center justify-center text-center p-4 rounded-lg shadow-md bg-white"
             >
-              <div className="border border-gray-300 rounded-lg">
-                <Image src={item.icon} alt="" width={300} height={100} />
+              <div className="border border-gray-300 rounded-lg image-hover-effect">
+                <Image src={item.icon} alt="" width={300} height={100}  />
               </div>
               <div className="flex flex-col pl-2 text-left">
                 <h1 className="font-bold text-lg">{item.title}</h1>

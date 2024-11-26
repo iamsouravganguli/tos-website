@@ -31,40 +31,40 @@ export function TechnologiesSection() {
         </div>
         
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5  md:mt-10">
-          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center">
+          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center image-hover-effect">
             <Image src={reactimg} alt={""} width={80} height={20} />
           </div>
-          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center">
+          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center image-hover-effect">
             <Image src={nextjs} alt={""} width={50} height={20} />
             <p className="text-black font-bold">&nbsp; Next.js</p>
           </div>
-          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center">
+          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center image-hover-effect">
             <Image src={js} alt={""} width={40} height={20} />
             <p className="text-[#8dc74a] font-bold">&nbsp; JavaScript</p>
           </div>
-          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center">
+          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center image-hover-effect">
             <Image src={vuejs} alt={""} width={50} height={20} />
             <p className="text-black font-semibold">Vue.js</p>
           </div>
-          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center">
+          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center image-hover-effect">
             <Image src={nodejs} alt={""} width={80} height={20} />
           </div>
-          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center">
+          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center image-hover-effect">
             <Image src={docker} alt={""} width={80} height={20} />
             <p className="text-blue-500 font-semibold">&nbsp;Docker</p>
           </div>
-          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center">
+          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center image-hover-effect">
             <Image src={expressjs} alt={""} width={100} height={20} />
           </div>
-          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center">
+          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center image-hover-effect">
             <Image src={mongodb} alt={""} width={100} height={20} />
           </div>
-          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center">
+          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center image-hover-effect">
             <Image src={sql} alt={""} width={50} height={20} />
             <p className="text-blue-950 font-semibold">My</p>
             <p className="text-orange-500 font-semibold">SQL</p>
           </div>
-          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center">
+          <div className="border-r border-b border-gray-300 mt-10 h-20 px-10 flex justify-center items-center image-hover-effect">
             <Image src={capacitor} alt={""} width={50} height={20} />
             <p className="text-blue-400 font-semibold">&nbsp;Capacitor</p>
           </div>
