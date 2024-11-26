@@ -102,9 +102,9 @@ export const Teams: React.FC = () => {
                   <p className="team-one__sub-title text-sm">{item.position}</p>
                 </div>
                 <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center py-2.5 z-20 transform translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0">
-                  <h3 className="font-bold text-md">
-                    <a href="#">{item.mail}</a>
-                  </h3>
+                  <Link href={`mailto:${item.mail}`}  className="font-bold text-md hover:text-blue-500">
+                    {item.mail}
+                  </Link>
                   <div className="flex justify-center items-center ">
                   <Link href={item.Linkedin} className="flex hover:text-blue-500 underline items-center team-one__sub-title team-one__hover-sub-title text-sm">
                   LinkedIn</Link>
