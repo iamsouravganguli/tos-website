@@ -8,6 +8,13 @@ import {Linkedin} from "lucide-react"
 export const Teams: React.FC = () => {
   const teamImages = [
     {
+      name:"Piyush Sarwaariya ",
+      position:"Founder and CEO",
+      image:"/assets/team/Piyush.jpg",
+      mail:"piyush@tos.systems",
+      Linkedin:""
+    },
+    {
       name:"Sourav Ganguli",
       position:"Chief Technology Officer ",
       image:"/assets/team/sourav.jpg",
@@ -28,13 +35,7 @@ export const Teams: React.FC = () => {
       mail:"abhishek.kumar@tos.systems",
       Linkedin:"https://www.linkedin.com/in/abhishek-kumar-9656a3220/"
     },
-    {
-      name:"Piyush Sarwaariya ",
-      position:"Founder and CEO",
-      image:"/assets/team/Piyush.jpg",
-      mail:"piyush@tos.systems",
-      Linkedin:""
-    },
+    
     {
       name:"Anuj Upadhyay",
       position:"Web developer",
