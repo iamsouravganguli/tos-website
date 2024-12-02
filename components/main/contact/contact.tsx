@@ -28,6 +28,24 @@ const sendContactForm = async (data: any) => {
 export function ContactForm() {
   const [activeButton, setActiveButton] = React.useState("Web Design");
 
+
+  const handleCall = () => {
+    const userChoice = confirm(
+      "Choose a number to call:\n\n1. +91-9304251279\n2. +91-8062178484"
+    );
+    if (userChoice) {
+      const selectedNumber = prompt(
+        "Enter 1 for +91-9304251279 or 2 for +91-8062178484:"
+      );
+      if (selectedNumber === "1") {
+        window.location.href = "tel:+919304251279";
+      } else if (selectedNumber === "2") {
+        window.location.href = "tel:+918062178484";
+      } else {
+        alert("Invalid selection!");
+      }
+    }
+  };
   // useForm with yupResolver
   const {
     control,
@@ -84,7 +102,7 @@ export function ContactForm() {
                     <div className="border-b border-r border-white bg-white absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1"></div>
                   </div>
                 </div>
-
+                <Link href="mailto:mail.tos.systems@gmail.com">
                 <div className="shadow-md flex items-center group-hover:gap-2 bg-white p-3 rounded-full cursor-pointer duration-300">
                   <img
                     src="/assets/mail.png"
@@ -92,12 +110,13 @@ export function ContactForm() {
                     className="w-5 h-5 fill-zinc-600"
                   />
                   <span className="text-[0px] group-hover:text-sm duration-300">
-                  info@tos.systems
+                  mail.tos.systems@gmail.com
                   </span>
                 </div>
+                </Link>
               </div>
               {/*Mobile No */}
-              <div className="group relative flex justify-start items-center text-zinc-600 text-sm font-bold">
+              <div onClick={handleCall} className="group relative flex justify-start items-center text-zinc-600 text-sm font-bold">
                 <div className="absolute opacity-0 group-hover:opacity-100 group-hover:-translate-y-[150%] -translate-y-[300%] duration-500 group-hover:delay-500 skew-y-[20deg] group-hover:skew-y-0 shadow-md">
                   <div className="bg-white flex items-center gap-1 p-2 rounded-md">
                     <img
@@ -105,27 +124,27 @@ export function ContactForm() {
                       alt="Location"
                       className="w-5 h-5"
                     />
-                    <span>Mobile No</span>
+                    <span className="pr-5">Call us</span>
                   </div>
                   <div className="shadow-md bg-white absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1"></div>
                   <div className="rounded-md bg-white group-hover:opacity-0 group-hover:scale-[115%] group-hover:delay-700 duration-500 w-full h-full absolute top-0 left-0">
                     <div className="border-b border-r border-white bg-white absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1"></div>
                   </div>
                 </div>
-
+                <a href="tel:+919304251279">
                 <div className="shadow-md flex items-center group-hover:gap-2 bg-white p-3 rounded-full cursor-pointer duration-300">
                   <img
                     src="/assets/phone.png"
                     alt="Location"
                     className="w-5 h-5 fill-zinc-600"
                   />
-                  <span className="text-[0px] group-hover:text-sm duration-300">
-                  +91-8062178484
-                  </span>
+                  
                 </div>
+                </a>
               </div>
               {/*Location */}
               <div className="group relative flex justify-start items-center text-zinc-600 text-sm font-bold">
+               
                 <div className="absolute opacity-0 group-hover:opacity-100 group-hover:-translate-y-[150%] -translate-y-[300%] duration-500 group-hover:delay-500 skew-y-[20deg] group-hover:skew-y-0 shadow-md">
                   <div className="bg-white flex items-center gap-1 p-2 rounded-md">
                     <img
@@ -140,7 +159,8 @@ export function ContactForm() {
                     <div className="border-b border-r border-white bg-white absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1"></div>
                   </div>
                 </div>
-
+               
+                <Link href="https://maps.google.com/maps/place//data=!4m2!3m1!1s0xa4c579dab2be1971:0x5013a122f2216122?entry=s&sa=X&ved=1t:8290&hl=en-GB&ictx=111">
                 <div className="shadow-md flex items-center group-hover:gap-2 bg-white p-3 rounded-full cursor-pointer duration-300">
                   <img
                     src="/assets/location.png"
@@ -151,6 +171,7 @@ export function ContactForm() {
                     Dehradun
                   </span>
                 </div>
+                </Link>
               </div>
             </ul>
 

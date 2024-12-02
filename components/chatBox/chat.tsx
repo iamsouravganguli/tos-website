@@ -19,7 +19,7 @@ const Chat = () => {
     };
 
     return (
-        <div className="fixed bottom-4 left-6 z-20 rounded-full cursor-pointer">
+        <div className="fixed bottom-4 left-6 z-50 rounded-full cursor-pointer">
             {!showOptions ? (
                 <MessageSquare
                     size={50}

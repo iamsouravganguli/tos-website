@@ -2,8 +2,7 @@
 import {
   AboutSection,
   Hero,
-  Navbar,
-  Footer,
+  
   ContactForm,
   TechnologiesSection,
   DiscoverSection,
@@ -67,9 +66,9 @@ export default function Home() {
       <SectionWrapper>
         <Teams />
       </SectionWrapper>
-      <SectionWrapper>
+      
         <Chat />
-      </SectionWrapper>
+    
       {/* <TeamColLarge /> */}
     </div>
   );
