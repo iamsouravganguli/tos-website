@@ -40,7 +40,7 @@ export function ContactForm() {
       if (selectedNumber === "1") {
         window.location.href = "tel:+919304251279";
       } else if (selectedNumber === "2") {
-        window.location.href = "tel:+918062178484";
+        window.location.href = "tel:+919382826158";
       } else {
         alert("Invalid selection!");
       }
