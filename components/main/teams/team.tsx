@@ -50,6 +50,14 @@ export const Teams: React.FC = () => {
       mail:"dikshat46@gmail.com",
       Linkedin:"https://www.linkedin.com/in/diksha-thapa-9204aa232/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
+    {
+      name:"Aditya Verma",
+      position:"UI/UX Designer",
+      image:"/assets/team/aditya.JPG",
+      mail:"aadneet2005@gmail.com",
+      Linkedin:"https://www.linkedin.com/in/aditya-verma-66a3b3282"
+    },
+
   ];
   return (
     <div className="py-16 mx-auto flex justify-center items-center text-center flex-col bg-white  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-10 lg:px-8 lg:py-20" id="team">
