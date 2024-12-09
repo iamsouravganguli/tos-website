@@ -53,7 +53,7 @@ export const Teams: React.FC = () => {
     {
       name:"Aditya Verma",
       position:"UI/UX Designer",
-      image:"/assets/team/aditya.JPG",
+      image:"/assets/team/aditya.jpg",
       mail:"aadneet2005@gmail.com",
       Linkedin:"https://www.linkedin.com/in/aditya-verma-66a3b3282"
     },
