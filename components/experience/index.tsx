@@ -20,7 +20,7 @@ export const Experience = () => {
     const totalDuration = 3; // Animation duration for all counters
 
     return (
-        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10 px-4 md:px-10 lg:px-20 pb-10">
+        <div ref={ref} className="grid grid-cols-1 text-black md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10 px-4 md:px-10 lg:px-20 pb-10">
             {startAnimation && (
                 <>
                     <div className="text-center flex flex-col items-center">
