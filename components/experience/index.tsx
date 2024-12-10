@@ -26,21 +26,21 @@ export const Experience = () => {
                     <div className="text-center flex flex-col items-center">
                         <Image src="/assets/experience/experience.png" alt="" width={150} height={200} />
                         <h1 className="text-2xl md:text-3xl lg:text-4xl mt-2 font-semibold">
-                            <CountUp start={1} end={12} duration={totalDuration} />+
+                            <CountUp start={1} end={5} duration={totalDuration} />+
                         </h1>
                         <p className="text-sm md:text-base text-gray-500 mt-2">Years of Experience</p>
                     </div>
                     <div className="text-center flex flex-col items-center">
                         <Image src="/assets/experience/projects.png" alt="" width={100} height={200} />
                         <h1 className="text-2xl md:text-3xl lg:text-4xl mt-2 font-semibold">
-                            <CountUp start={1} end={350} duration={totalDuration} />+
+                            <CountUp start={1} end={250} duration={totalDuration} />+
                         </h1>
                         <p className="text-sm md:text-base text-gray-500 mt-2">Project Portfolio</p>
                     </div>
                     <div className="text-center flex flex-col items-center">
                         <Image src="/assets/experience/brand.png" alt="" width={100} height={200} />
                         <h1 className="text-2xl md:text-3xl lg:text-4xl mt-2 font-semibold">
-                            <CountUp start={1} end={155} duration={totalDuration} />+
+                            <CountUp start={1} end={100} duration={totalDuration} />+
                         </h1>
                         <p className="text-sm md:text-base text-gray-500 mt-2">Branding Creations</p>
                     </div>
