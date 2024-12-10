@@ -16,6 +16,7 @@ import { FAQSection } from "@/components/main/faq/faq";
 import TeamColLarge from "@/components/main/teams/teamColLarge";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Experience } from "@/components/experience";
 
 const SectionWrapper = ({ children }: { children: React.ReactNode }) => {
   const ref = useRef(null);
@@ -47,6 +48,9 @@ export default function Home() {
       </SectionWrapper>
       <SectionWrapper>
         <AboutSection />
+      </SectionWrapper>
+      <SectionWrapper>
+        <Experience/>
       </SectionWrapper>
       <SectionWrapper>
         <DiscoverSection />
