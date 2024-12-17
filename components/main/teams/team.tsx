@@ -60,7 +60,7 @@ export const Teams: React.FC = () => {
     {
       name:"Firdosh Ali",
       position:"2D DMP artist and 3D Generalist",
-      image:"/assets/team/Firdosh.jpeg",
+      image:"/assets/team/firdosh.jpeg",
       mail:"firdosh940@gmail.com",
       Linkedin:"https://www.linkedin.com/in/firdosh-art/ "
     },
