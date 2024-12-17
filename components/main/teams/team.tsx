@@ -57,6 +57,22 @@ export const Teams: React.FC = () => {
       mail:"aadneet2005@gmail.com",
       Linkedin:"https://www.linkedin.com/in/aditya-verma-66a3b3282"
     },
+    {
+      name:"Firdosh Ali",
+      position:"2D DMP artist and 3D Generalist",
+      image:"/assets/team/Firdosh.jpeg",
+      mail:"firdosh940@gmail.com",
+      Linkedin:"https://www.linkedin.com/in/firdosh-art/ "
+    },
+    {
+      name:"Mayank Bhattacharya",
+      position:"CG Motion designer / 3D Gernalist",
+      image:"/assets/team/mayank.jpeg",
+      mail:"moonsilva.art@gmail.com",
+      Linkedin:"https://www.linkedin.com/in/mayank-bhattacharya-b01bb462?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    
+
 
   ];
   return (
