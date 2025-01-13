@@ -23,7 +23,7 @@ export const Teams: React.FC = () => {
     },
     {
       name:"Amit Tiwari",
-      position:"Software Development Manager",
+      position:"Software Project Manager",
       image:"/assets/team/Amit.jpg",
       mail:"amit.tiwari@tos.systems",
       Linkedin:"https://www.linkedin.com/in/amit-kumar-9372a0220/"
@@ -70,6 +70,13 @@ export const Teams: React.FC = () => {
       image:"/assets/team/mayank.jpeg",
       mail:"moonsilva.art@gmail.com",
       Linkedin:"https://www.linkedin.com/in/mayank-bhattacharya-b01bb462?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      name:"Ashish Pal",
+      position:"Web developer",
+      image:"/assets/team/Ashish.jpg",
+      mail:"ashu191319@gmail.com",
+      Linkedin:"https://www.linkedin.com/in/ashish-kumar-pal-1730312bb/"
     },
     
 

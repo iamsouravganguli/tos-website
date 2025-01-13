@@ -6,22 +6,32 @@ export const ClientDomains: React.FC = () => {
     {
       title: "Media & Entertainment",
       description: "Empowering Growth for Media & Entertainment",
-      icon: "/assets/services/clientDomains/media.jpg",
+      icon: "/assets/services/clientDomains/entertainment.png",
     },
     {
       title: "AgriTech",
       description: "Supporting AgriTech Industries with our hardware solutions.",
-      icon: "/assets/services/clientDomains/agritech.webp",
+      icon: "/assets/services/clientDomains/agriculture (1).png",
     },
     {
       title: "Healthcare",
       description: "Providing Healthcare solutions to improve patient care.",
-      icon: "/assets/services/clientDomains/healthcare.jpeg",
+      icon: "/assets/services/clientDomains/healthcare (1).png",
     },
     {
       title: "TeleCom",
       description: "Helping TeleCom companies with our secure solutions.",
-      icon: "/assets/services/clientDomains/telecom.jpg",
+      icon: "/assets/services/clientDomains/telecommunication.png",
+    },
+    {
+      title: "Ecommerce",
+      description: "Expert e-commerce development services, from custom platforms to integrations, helping businesses thrive online.",
+      icon: "/assets/services/clientDomains/online-shopping.png",
+    },
+    {
+      title: "SEQ",
+      description: "Streamline your development workflow. Automate repetitive tasks, improve code quality, and accelerate your projects.",
+      icon: "/assets/services/clientDomains/seo-search-symbol.png",
     },
   ];
 
@@ -46,9 +56,9 @@ export const ClientDomains: React.FC = () => {
               key={index}
               className=" gap-5 flex p-5 h-44 xl:h-50 place-items-center justify-center text-center rounded-lg shadow-md bg-white"
             >
-              <div className="border border-gray-300 min-w-[90px]    min-h-[50px] rounded-lg image-hover-effect">
+              <div className="min-w-[90px]    min-h-[50px] rounded-lg image-hover-effect">
                 {/* <Image src={item.icon} alt="" width={300} height={100}  /> */}
-                <img src={item.icon}  className="w-48 h-24"/>
+                <img src={item.icon}  className="w-38 h-20"/>
               </div>
               <div className="flex flex-col pl-2 text-left text-sm md:text-md">
                 <h1 className="font-bold text-sm md:text-lg">{item.title}</h1>
