@@ -29,7 +29,7 @@ export const ClientDomains: React.FC = () => {
       icon: "/assets/services/clientDomains/online-shopping.png",
     },
     {
-      title: "SEQ",
+      title: "SEO",
       description: "Streamline your development workflow. Automate repetitive tasks, improve code quality, and accelerate your projects.",
       icon: "/assets/services/clientDomains/seo-search-symbol.png",
     },
@@ -43,7 +43,7 @@ export const ClientDomains: React.FC = () => {
       <h1 className="text-dark font-extrabold leading-none text-2xl md:text-4xl lg:text-5xl xl:text-6xl">
         Across Multiple Domains
       </h1>
-      <div className="mt-10 w-full px-10  ">
+      <div className="mt-10 w-full px-10  file-input-bordered">
         <div
           className={`grid gap-6   ${
             clientDomains.length === 2

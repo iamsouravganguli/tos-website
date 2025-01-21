@@ -23,7 +23,7 @@ export const Teams: React.FC = () => {
     },
     {
       name:"Amit Tiwari",
-      position:"Software Project Manager",
+      position:"Co Founder & Software Project Manager",
       image:"/assets/team/Amit.jpg",
       mail:"amit.tiwari@tos.systems",
       Linkedin:"https://www.linkedin.com/in/amit-kumar-9372a0220/"
