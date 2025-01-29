@@ -71,13 +71,13 @@ export const Teams: React.FC = () => {
       mail:"moonsilva.art@gmail.com",
       Linkedin:"https://www.linkedin.com/in/mayank-bhattacharya-b01bb462?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
-    {
-      name:"Ashish Pal",
-      position:"Web developer",
-      image:"/assets/team/Ashish.jpg",
-      mail:"ashu191319@gmail.com",
-      Linkedin:"https://www.linkedin.com/in/ashish-kumar-pal-1730312bb/"
-    },
+    // {
+    //   name:"Ashish Pal",
+    //   position:"Web developer",
+    //   image:"/assets/team/Ashish.jpg",
+    //   mail:"ashu191319@gmail.com",
+    //   Linkedin:"https://www.linkedin.com/in/ashish-kumar-pal-1730312bb/"
+    // },
     
 
 
