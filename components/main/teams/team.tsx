@@ -21,13 +21,13 @@ export const Teams: React.FC = () => {
       mail:"sourav@tos.systems",
       Linkedin:"https://www.linkedin.com/in/iamsouravganguli/"
     },
-    {
-      name:"Amit Tiwari",
-      position:"Co Founder & Software Project Manager",
-      image:"/assets/team/Amit.jpg",
-      mail:"amit.tiwari@tos.systems",
-      Linkedin:"https://www.linkedin.com/in/amit-kumar-9372a0220/"
-    },
+    // {
+    //   name:"Amit Tiwari",
+    //   position:"Co Founder & Software Project Manager",
+    //   image:"/assets/team/Amit.jpg",
+    //   mail:"amit.tiwari@tos.systems",
+    //   Linkedin:"https://www.linkedin.com/in/amit-kumar-9372a0220/"
+    // },
     {
       name:"Abhishek Kumar",
       position:"Web developer",
@@ -36,27 +36,27 @@ export const Teams: React.FC = () => {
       Linkedin:"https://www.linkedin.com/in/abhishek-kumar-9656a3220/"
     },
     
-    {
-      name:"Anuj Upadhyay",
-      position:"Web developer",
-      image:"/assets/team/Anuj.jpg",
-      mail:"anuj@tos.systems",
-      Linkedin:"https://www.linkedin.com/in/anuj-upadhyay-a973b0238/"
-    },
-    {
-      name:"Diksha Thapa",
-      position:"Social media Manager",
-      image:"/assets/team/diksha.JPG",
-      mail:"dikshat46@gmail.com",
-      Linkedin:"https://www.linkedin.com/in/diksha-thapa-9204aa232/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-    },
-    {
-      name:"Aditya Verma",
-      position:"UI/UX Designer",
-      image:"/assets/team/aditya.jpg",
-      mail:"aadneet2005@gmail.com",
-      Linkedin:"https://www.linkedin.com/in/aditya-verma-66a3b3282"
-    },
+    // {
+    //   name:"Anuj Upadhyay",
+    //   position:"Web developer",
+    //   image:"/assets/team/Anuj.jpg",
+    //   mail:"anuj@tos.systems",
+    //   Linkedin:"https://www.linkedin.com/in/anuj-upadhyay-a973b0238/"
+    // },
+    // {
+    //   name:"Diksha Thapa",
+    //   position:"Social media Manager",
+    //   image:"/assets/team/diksha.JPG",
+    //   mail:"dikshat46@gmail.com",
+    //   Linkedin:"https://www.linkedin.com/in/diksha-thapa-9204aa232/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    // },
+    // {
+    //   name:"Aditya Verma",
+    //   position:"UI/UX Designer",
+    //   image:"/assets/team/aditya.jpg",
+    //   mail:"aadneet2005@gmail.com",
+    //   Linkedin:"https://www.linkedin.com/in/aditya-verma-66a3b3282"
+    // },
     {
       name:"Firdosh Ali",
       position:"2D DMP artist and 3D Generalist",
@@ -119,7 +119,7 @@ export const Teams: React.FC = () => {
                   alt="Team Member"
                   width={200}
                   height={50}
-                  className="lazyloaded md:w-[30rem] w-[60rem]   transition-transform duration-300 ease-in-out group-hover:scale-105"
+                  className="lazyloaded  md:w-[30rem] w-[60rem]   transition-transform duration-300 ease-in-out group-hover:scale-105"
                 />
                 {/* <Image alt="teams"
                 src={item.image}
