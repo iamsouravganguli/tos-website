@@ -21,13 +21,13 @@ export const Teams: React.FC = () => {
       mail:"sourav@tos.systems",
       Linkedin:"https://www.linkedin.com/in/iamsouravganguli/"
     },
-    // {
-    //   name:"Amit Tiwari",
-    //   position:"Co Founder & Software Project Manager",
-    //   image:"/assets/team/Amit.jpg",
-    //   mail:"amit.tiwari@tos.systems",
-    //   Linkedin:"https://www.linkedin.com/in/amit-kumar-9372a0220/"
-    // },
+    {
+      name:"Amit Tiwari",
+      position:"Co Founder & Software Project Manager",
+      image:"/assets/team/Amit.jpg",
+      mail:"amit.tiwari@tos.systems",
+      Linkedin:"https://www.linkedin.com/in/amit-kumar-9372a0220/"
+    },
     {
       name:"Abhishek Kumar",
       position:"Web developer",
